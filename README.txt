@@ -5,3 +5,4 @@ Team Ardient IRP.
 Team Names: 
 Gavin Lesko
 Yicheng Lu
+Zixuan Huang
