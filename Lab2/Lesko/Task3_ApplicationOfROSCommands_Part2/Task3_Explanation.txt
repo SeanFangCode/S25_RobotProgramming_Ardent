@@ -1,0 +1,4 @@
+To draw the square, I first changed the pathing color to black through the set_pen service.
+I then directly published to the /turtle1/cmd_vel topic, first by moving 3 in the x direction,
+turning 90 degrees, and then moving 3 again in the x direction. I repeated these commands until
+square was drawn.
