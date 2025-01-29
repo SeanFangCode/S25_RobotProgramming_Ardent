@@ -1,0 +1,5 @@
+Using the set_pen service I changed the path color to black. I then cleared the 
+turtle sim window of previously drawn paths by using ros2 service call /clear 
+std_srvs/srv/Empty. In order to draw the square I published to the /turtle1/cmd_vel 
+topic, and changed the linear and angular values accordingly. I first set the first 
+position to 90 degrees and then had it move by 2 and so on until it created a square.
