@@ -1,0 +1,6 @@
+I first set the line weight and color to be heavier and black so that the sq
+more visible. This is done with the SetPen service, then i turn the turtle to the 
+starting position and rotation with RotateAbsolute. I then move the turtle in the x 
+direction by 2 with geometry_msg topic. After the move, I turn it again with RotateAbsolute 
+in increments of 90 degrees. This is repeated until the turtle is back at the starting 
+position, completeing the square.
