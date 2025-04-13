@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<robot name="my_robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- Parameters -->
+  <xacro:property name="L" value="0.6"/> <!-- base length -->
+  <xacro:property name="W" value="0.4"/> <!-- base width -->
+  <xacro:property name="H" value="0.2"/> <!-- base height -->
+  <xacro:property name="R" value="0.1"/> <!-- wheel radius -->
+  <xacro:property name="T" value="0.05"/> <!-- wheel thickness -->
+
+  <!-- Inertia Macros -->
+  <xacro:macro name="inertia_box" params="m x y z pos rot">
+    <inertial>
+      <origin xyz="${pos}" rpy="${rot}" />
+      <mass value="${m}" />
+      <inertia ixx="${(m/12.0)*(y*y + z*z)}"
+               iyy="${(m/12.0)*(x*x + z*z)}"
+               izz="${(m/12.0)*(x*x + y*y)}"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="inertia_cyl" params="m r h pos rot">
+    <inertial>
+      <origin xyz="${pos}" rpy="${rot}" />
+      <mass value="${m}" />
+      <inertia ixx="${(1/12.0)*m*(3*r*r + h*h)}"
+               iyy="${(1/12.0)*m*(3*r*r + h*h)}"
+               izz="${0.5*m*r*r}"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </xacro:macro>
+
+  <xacro:macro name="inertia_sphere" params="m r pos rot">
+    <inertial>
+      <origin xyz="${pos}" rpy="${rot}" />
+      <mass value="${m}" />
+      <inertia ixx="${(2/5.0)*m*r*r}"
+               iyy="${(2/5.0)*m*r*r}"
+               izz="${(2/5.0)*m*r*r}"
+               ixy="0" ixz="0" iyz="0"/>
+    </inertial>
+  </xacro:macro>
+
+  <!-- Colors -->
+  <material name="mat_green"><color rgba="0 1 0 1"/></material>
+  <material name="mat_white"><color rgba="1 1 1 1"/></material>
+  <material name="mat_gray"><color rgba="0.5 0.5 0.5 1"/></material>
+
+  <!-- Base -->
+  <link name="base_link">
+    <visual>
+      <geometry><box size="${L} ${W} ${H}"/></geometry>
+      <origin xyz="0 0 ${H/2.0}" rpy="0 0 0"/>
+      <material name="mat_green"/>
+    </visual>
+    <collision>
+      <geometry><box size="${L} ${W} ${H}"/></geometry>
+      <origin xyz="0 0 ${H/2.0}" rpy="0 0 0"/>
+    </collision>
+    <xacro:inertia_box m="5.0" x="${L}" y="${W}" z="${H}" pos="0 0 ${H/2.0}" rot="0 0 0"/>
+  </link>
+
+  <!-- Lidar -->
+  <link name="lidar">
+    <visual>
+      <geometry><cylinder radius="0.1" length="0.05"/></geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="mat_white"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="0.1" length="0.05"/></geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </collision>
+    <xacro:inertia_cyl m="1.0" r="0.1" h="0.05" pos="0 0 0" rot="0 0 0"/>
+  </link>
+
+  <!-- Wheels -->
+  <link name="left_wheel">
+    <visual>
+      <geometry><cylinder radius="${R}" length="${T}"/></geometry>
+      <origin xyz="0 0 ${T/2}" rpy="0 0 0"/>
+      <material name="mat_gray"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="${R}" length="${T}"/></geometry>
+      <origin xyz="0 0 ${T/2}" rpy="0 0 0"/>
+    </collision>
+    <xacro:inertia_cyl m="1.0" r="${R}" h="${T}" pos="0 0 ${T/2}" rot="0 0 0"/>
+  </link>
+
+  <link name="right_wheel">
+    <visual>
+      <geometry><cylinder radius="${R}" length="${T}"/></geometry>
+      <origin xyz="0 0 ${T/2}" rpy="0 0 0"/>
+      <material name="mat_gray"/>
+    </visual>
+    <collision>
+      <geometry><cylinder radius="${R}" length="${T}"/></geometry>
+      <origin xyz="0 0 ${T/2}" rpy="0 0 0"/>
+    </collision>
+    <xacro:inertia_cyl m="1.0" r="${R}" h="${T}" pos="0 0 ${T/2}" rot="0 0 0"/>
+  </link>
+
+  <!-- Caster -->
+  <link name="caster_wheel">
+    <visual>
+      <geometry><sphere radius="${T}"/></geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+      <material name="mat_gray"/>
+    </visual>
+    <collision>
+      <geometry><sphere radius="${T}"/></geometry>
+      <origin xyz="0 0 0" rpy="0 0 0"/>
+    </collision>
+    <xacro:inertia_sphere m="2.0" r="${T}" pos="0 0 0" rot="0 0 0"/>
+  </link>
+
+</robot>
