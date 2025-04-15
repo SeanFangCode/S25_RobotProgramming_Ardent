@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/aruco_follower/aruco_follower.egg-info
+writing ../../build/aruco_follower/aruco_follower.egg-info/PKG-INFO
+writing dependency_links to ../../build/aruco_follower/aruco_follower.egg-info/dependency_links.txt
+writing entry points to ../../build/aruco_follower/aruco_follower.egg-info/entry_points.txt
+writing requirements to ../../build/aruco_follower/aruco_follower.egg-info/requires.txt
+writing top-level names to ../../build/aruco_follower/aruco_follower.egg-info/top_level.txt
+writing manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'
+reading manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'
+writing manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build
+creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib
+creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib/aruco_follower
+copying aruco_follower/__init__.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib/aruco_follower
+running install
+running install_lib
+creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower
+copying /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib/aruco_follower/__init__.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower
+byte-compiling /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower/__init__.py to __init__.cpython-38.pyc
+running install_data
+creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/share/ament_index
+creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/share/ament_index/resource_index
+creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/share/ament_index/resource_index/packages
+copying resource/aruco_follower -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/share/ament_index/resource_index/packages
+copying package.xml -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/share/aruco_follower
+running install_egg_info
+Copying ../../build/aruco_follower/aruco_follower.egg-info to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower-0.0.0-py3.8.egg-info
+running install_scripts
+Installing follower_node script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/aruco_follower
+writing list of installed files to '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/install.log'

@@ -1,0 +1,3 @@
+[console_scripts]
+follower_node = aruco_follower.follower_node:main
+
