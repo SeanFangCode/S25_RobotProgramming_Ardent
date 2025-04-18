@@ -21,6 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             'follower_node = aruco_follower.follower_node:main',
+            'webcam_pub = webcam.cam_pub:main',
+            'webcam_sub = webcam.cam_sub:main'
         ],
     },
 )
