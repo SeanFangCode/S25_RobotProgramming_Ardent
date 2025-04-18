@@ -1,0 +1,6 @@
+source;share/aruco_follower/hook/pythonpath.ps1
+source;share/aruco_follower/hook/pythonpath.dsv
+source;share/aruco_follower/hook/pythonpath.sh
+source;share/aruco_follower/hook/ament_prefix_path.ps1
+source;share/aruco_follower/hook/ament_prefix_path.dsv
+source;share/aruco_follower/hook/ament_prefix_path.sh

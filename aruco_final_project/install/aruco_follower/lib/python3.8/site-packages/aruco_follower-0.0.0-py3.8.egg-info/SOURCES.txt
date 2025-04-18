@@ -1,0 +1,15 @@
+package.xml
+setup.cfg
+setup.py
+../../build/aruco_follower/aruco_follower.egg-info/PKG-INFO
+../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt
+../../build/aruco_follower/aruco_follower.egg-info/dependency_links.txt
+../../build/aruco_follower/aruco_follower.egg-info/entry_points.txt
+../../build/aruco_follower/aruco_follower.egg-info/requires.txt
+../../build/aruco_follower/aruco_follower.egg-info/top_level.txt
+../../build/aruco_follower/aruco_follower.egg-info/zip-safe
+aruco_follower/__init__.py
+resource/aruco_follower
+test/test_copyright.py
+test/test_flake8.py
+test/test_pep257.py
