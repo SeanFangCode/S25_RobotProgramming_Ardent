@@ -1,0 +1,41 @@
+[1.173s] Invoking command in '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/src/webcam': PYTHONPATH=/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/prefix_override:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/webcam build --build-base /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build install --record /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/install.log --install-scripts $base/lib/webcam --single-version-externally-managed
+[1.481s] running egg_info
+[1.482s] creating ../../build/webcam/webcam.egg-info
+[1.482s] writing ../../build/webcam/webcam.egg-info/PKG-INFO
+[1.482s] writing dependency_links to ../../build/webcam/webcam.egg-info/dependency_links.txt
+[1.484s] writing entry points to ../../build/webcam/webcam.egg-info/entry_points.txt
+[1.484s] writing requirements to ../../build/webcam/webcam.egg-info/requires.txt
+[1.484s] writing top-level names to ../../build/webcam/webcam.egg-info/top_level.txt
+[1.485s] writing manifest file '../../build/webcam/webcam.egg-info/SOURCES.txt'
+[1.530s] reading manifest file '../../build/webcam/webcam.egg-info/SOURCES.txt'
+[1.530s] writing manifest file '../../build/webcam/webcam.egg-info/SOURCES.txt'
+[1.533s] running build
+[1.533s] running build_py
+[1.533s] creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build
+[1.533s] creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build/lib
+[1.533s] creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build/lib/webcam
+[1.533s] copying webcam/__init__.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build/lib/webcam
+[1.533s] copying webcam/cam_sub.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build/lib/webcam
+[1.533s] copying webcam/cam_pub.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build/lib/webcam
+[1.533s] running install
+[1.534s] running install_lib
+[1.536s] creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam
+[1.536s] copying /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build/lib/webcam/__init__.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam
+[1.536s] copying /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build/lib/webcam/cam_sub.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam
+[1.537s] copying /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build/lib/webcam/cam_pub.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam
+[1.537s] byte-compiling /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam/__init__.py to __init__.cpython-38.pyc
+[1.538s] byte-compiling /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam/cam_sub.py to cam_sub.cpython-38.pyc
+[1.540s] byte-compiling /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam/cam_pub.py to cam_pub.cpython-38.pyc
+[1.541s] running install_data
+[1.541s] creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/share/ament_index
+[1.541s] creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/share/ament_index/resource_index
+[1.541s] creating /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/share/ament_index/resource_index/packages
+[1.541s] copying resource/webcam -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/share/ament_index/resource_index/packages
+[1.541s] copying package.xml -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/share/webcam
+[1.541s] running install_egg_info
+[1.545s] Copying ../../build/webcam/webcam.egg-info to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam-0.0.0-py3.8.egg-info
+[1.546s] running install_scripts
+[1.574s] Installing webcam_pub script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/webcam
+[1.576s] Installing webcam_sub script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/webcam
+[1.576s] writing list of installed files to '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/install.log'
+[1.632s] Invoked command in '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/src/webcam' returned '0': PYTHONPATH=/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/prefix_override:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/webcam build --build-base /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build install --record /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/install.log --install-scripts $base/lib/webcam --single-version-externally-managed

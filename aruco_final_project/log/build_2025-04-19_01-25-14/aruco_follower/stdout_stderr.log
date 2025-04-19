@@ -1,0 +1,22 @@
+running egg_info
+writing ../../build/aruco_follower/aruco_follower.egg-info/PKG-INFO
+writing dependency_links to ../../build/aruco_follower/aruco_follower.egg-info/dependency_links.txt
+writing entry points to ../../build/aruco_follower/aruco_follower.egg-info/entry_points.txt
+writing requirements to ../../build/aruco_follower/aruco_follower.egg-info/requires.txt
+writing top-level names to ../../build/aruco_follower/aruco_follower.egg-info/top_level.txt
+reading manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'
+writing manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'
+running build
+running build_py
+copying aruco_follower/aruco_followe.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib/aruco_follower
+running install
+running install_lib
+copying /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib/aruco_follower/aruco_followe.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower
+byte-compiling /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower/aruco_followe.py to aruco_followe.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/aruco_follower/aruco_follower.egg-info to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower-0.0.0-py3.8.egg-info
+running install_scripts
+Installing follower_node script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/aruco_follower
+writing list of installed files to '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/install.log'

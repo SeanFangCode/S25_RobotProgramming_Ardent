@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'follower_node = aruco_follower.follower_node:main',
+            'follower_node = aruco_follower.aruco_follower:main',
         ],
     },
 )

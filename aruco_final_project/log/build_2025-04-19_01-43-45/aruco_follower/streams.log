@@ -1,0 +1,18 @@
+[20.328s] Invoking command in '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/src/aruco_follower': PYTHONPATH=/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/prefix_override:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/aruco_follower build --build-base /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build install --record /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/install.log --install-scripts $base/lib/aruco_follower --single-version-externally-managed
+[34.708s] running egg_info
+[34.764s] writing ../../build/aruco_follower/aruco_follower.egg-info/PKG-INFO
+[34.844s] writing dependency_links to ../../build/aruco_follower/aruco_follower.egg-info/dependency_links.txt
+[34.864s] writing entry points to ../../build/aruco_follower/aruco_follower.egg-info/entry_points.txt
+[34.992s] writing requirements to ../../build/aruco_follower/aruco_follower.egg-info/requires.txt
+[34.993s] writing top-level names to ../../build/aruco_follower/aruco_follower.egg-info/top_level.txt
+[38.404s] reading manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'
+[38.516s] writing manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'
+[38.612s] running build
+[38.612s] running build_py
+[38.612s] running install
+[38.720s] running install_lib
+[38.992s] running install_data
+[39.156s] running install_egg_info
+[39.396s] removing '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower-0.0.0-py3.8.egg-info' (and everything under it)
+[39.444s] Copying ../../build/aruco_follower/aruco_follower.egg-info to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower-0.0.0-py3.8.egg-info
+[39.520s] running install_scripts

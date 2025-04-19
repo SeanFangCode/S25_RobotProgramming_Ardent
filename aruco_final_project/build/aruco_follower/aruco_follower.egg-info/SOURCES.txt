@@ -9,6 +9,7 @@ setup.py
 ../../build/aruco_follower/aruco_follower.egg-info/top_level.txt
 ../../build/aruco_follower/aruco_follower.egg-info/zip-safe
 aruco_follower/__init__.py
+aruco_follower/aruco_follower.py
 resource/aruco_follower
 test/test_copyright.py
 test/test_flake8.py
