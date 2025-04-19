@@ -1,0 +1,165 @@
+[0.000000] (-) TimerEvent: {}
+[0.011557] (aruco_follower) JobQueued: {'identifier': 'aruco_follower', 'dependencies': OrderedDict()}
+[0.011652] (webcam) JobQueued: {'identifier': 'webcam', 'dependencies': OrderedDict()}
+[0.011671] (aruco_follower) JobStarted: {'identifier': 'aruco_follower'}
+[0.111523] (-) TimerEvent: {}
+[0.211796] (-) TimerEvent: {}
+[0.263713] (webcam) JobStarted: {'identifier': 'webcam'}
+[0.323598] (-) TimerEvent: {}
+[0.467977] (-) TimerEvent: {}
+[0.575504] (-) TimerEvent: {}
+[0.675775] (-) TimerEvent: {}
+[0.779518] (-) TimerEvent: {}
+[0.879800] (-) TimerEvent: {}
+[0.983858] (-) TimerEvent: {}
+[1.087753] (-) TimerEvent: {}
+[1.191539] (-) TimerEvent: {}
+[1.291862] (-) TimerEvent: {}
+[1.395626] (-) TimerEvent: {}
+[1.499522] (-) TimerEvent: {}
+[1.603511] (-) TimerEvent: {}
+[1.707551] (-) TimerEvent: {}
+[1.807944] (-) TimerEvent: {}
+[1.911568] (-) TimerEvent: {}
+[2.015532] (-) TimerEvent: {}
+[2.115814] (-) TimerEvent: {}
+[2.227958] (-) TimerEvent: {}
+[2.335661] (-) TimerEvent: {}
+[2.439580] (-) TimerEvent: {}
+[2.543588] (-) TimerEvent: {}
+[2.647537] (-) TimerEvent: {}
+[2.747848] (-) TimerEvent: {}
+[2.851641] (-) TimerEvent: {}
+[2.955537] (-) TimerEvent: {}
+[3.055851] (-) TimerEvent: {}
+[3.159548] (-) TimerEvent: {}
+[3.263545] (-) TimerEvent: {}
+[3.363837] (-) TimerEvent: {}
+[3.467812] (-) TimerEvent: {}
+[3.571516] (-) TimerEvent: {}
+[3.671816] (-) TimerEvent: {}
+[3.775585] (-) TimerEvent: {}
+[3.887795] (-) TimerEvent: {}
+[3.999544] (-) TimerEvent: {}
+[4.103498] (-) TimerEvent: {}
+[4.203736] (-) TimerEvent: {}
+[4.307526] (-) TimerEvent: {}
+[4.407803] (-) TimerEvent: {}
+[4.511567] (-) TimerEvent: {}
+[4.615545] (-) TimerEvent: {}
+[4.719576] (-) TimerEvent: {}
+[4.823506] (-) TimerEvent: {}
+[4.923793] (-) TimerEvent: {}
+[5.027781] (-) TimerEvent: {}
+[5.131768] (-) TimerEvent: {}
+[5.235544] (-) TimerEvent: {}
+[5.335887] (-) TimerEvent: {}
+[5.447544] (-) TimerEvent: {}
+[5.551534] (-) TimerEvent: {}
+[5.651824] (-) TimerEvent: {}
+[5.755543] (-) TimerEvent: {}
+[5.859525] (-) TimerEvent: {}
+[5.959799] (-) TimerEvent: {}
+[6.063505] (-) TimerEvent: {}
+[6.163966] (-) TimerEvent: {}
+[6.267503] (-) TimerEvent: {}
+[6.367929] (-) TimerEvent: {}
+[6.471652] (-) TimerEvent: {}
+[6.575510] (-) TimerEvent: {}
+[6.675877] (-) TimerEvent: {}
+[6.779571] (-) TimerEvent: {}
+[6.883640] (-) TimerEvent: {}
+[6.987504] (-) TimerEvent: {}
+[7.087969] (-) TimerEvent: {}
+[7.191778] (-) TimerEvent: {}
+[7.295517] (-) TimerEvent: {}
+[7.395906] (-) TimerEvent: {}
+[7.499778] (-) TimerEvent: {}
+[7.603617] (-) TimerEvent: {}
+[7.707626] (-) TimerEvent: {}
+[7.811588] (-) TimerEvent: {}
+[7.915551] (-) TimerEvent: {}
+[8.015917] (-) TimerEvent: {}
+[8.123860] (-) TimerEvent: {}
+[8.219715] (webcam) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/webcam', 'build', '--build-base', '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/build', 'install', '--record', '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/install.log', '--install-scripts', '$base/lib/webcam', '--single-version-externally-managed'], 'cwd': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/src/webcam', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yahboom', 'LC_TIME': 'zh_CN.UTF-8', 'SSH_AGENT_PID': '1367', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_server/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yahboom', 'OLDPWD': '/home/yahboom/S25_RobotProgramming_Ardent', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'zh_CN.UTF-8', 'MANAGERPID': '1118', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2239', '_colcon_cd_root': '/home/yahboom/', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yahboom', 'JOURNAL_STREAM': '8:52335', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yahboom', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/VM:@/tmp/.ICE-unix/1402,unix/VM:/tmp/.ICE-unix/1402', 'INVOCATION_ID': 'cb77ecd6a65b4553884654adc28a8598', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '66', 'AMENT_PREFIX_PATH': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:cc5b122d-06a0-4dc6-8ec9-e925ca07c249', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/prefix_override:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs'}, 'shell': False}
+[8.243680] (-) TimerEvent: {}
+[8.335931] (aruco_follower) Command: {'cmd': ['/usr/bin/python3', 'setup.py', 'egg_info', '--egg-base', '../../build/aruco_follower', 'build', '--build-base', '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build', 'install', '--record', '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/install.log', '--install-scripts', '$base/lib/aruco_follower', '--single-version-externally-managed'], 'cwd': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/src/aruco_follower', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'yahboom', 'LC_TIME': 'zh_CN.UTF-8', 'SSH_AGENT_PID': '1367', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_server/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/lib:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib', 'HOME': '/home/yahboom', 'OLDPWD': '/home/yahboom/S25_RobotProgramming_Ardent', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'zh_CN.UTF-8', 'MANAGERPID': '1118', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator21a9d5db22c73a993ff0b42f64b396873', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '2239', '_colcon_cd_root': '/home/yahboom/', 'IM_CONFIG_PHASE': '1', 'COLCON_PREFIX_PATH': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install', 'ROS_DISTRO': 'foxy', 'LOGNAME': 'yahboom', 'JOURNAL_STREAM': '8:52335', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'yahboom', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'WINDOWPATH': '2', 'PATH': '/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter/bin:/opt/ros/foxy/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'SESSION_MANAGER': 'local/VM:@/tmp/.ICE-unix/1402,unix/VM:/tmp/.ICE-unix/1402', 'INVOCATION_ID': 'cb77ecd6a65b4553884654adc28a8598', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'zh_CN.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'zh_CN.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/gdm/Xauthority', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'ROS_DOMAIN_ID': '66', 'AMENT_PREFIX_PATH': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs:/opt/ros/foxy', 'SHELL': '/bin/bash', 'LC_NAME': 'zh_CN.UTF-8', 'TERMINATOR_UUID': 'urn:uuid:cc5b122d-06a0-4dc6-8ec9-e925ca07c249', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'zh_CN.UTF-8', 'GPG_AGENT_INFO': '/run/user/1000/gnupg/S.gpg-agent:0:1', 'LC_IDENTIFICATION': 'zh_CN.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/prefix_override:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_voice_ctrl/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_visual/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_rviz/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_nav/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_multi/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_mediapipe/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_linefollow/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_laser/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description_x1/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_description/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_ctrl/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_bringup/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_astra/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/robot_pose_publisher/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/laserscan_to_point_pulisher/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs/lib/python3.8/site-packages:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages', 'LC_NUMERIC': 'zh_CN.UTF-8', 'LC_PAPER': 'zh_CN.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6003', 'CMAKE_PREFIX_PATH': '/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_slam:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_point:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_msgs:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_base_node:/home/yahboom/yahboomcar_ros2_ws/yahboomcar_ws/install/yahboomcar_KCFTracker:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/web_video_server:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_local_planner:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/teb_msgs:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/sllidar_ros2:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/slam_gmapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/openslam_gmapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_mapping:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/octomap_server:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter:/home/yahboom/yahboomcar_ros2_ws/software/library_ws/install/costmap_converter_msgs'}, 'shell': False}
+[8.351901] (-) TimerEvent: {}
+[8.455618] (-) TimerEvent: {}
+[8.559505] (-) TimerEvent: {}
+[8.659841] (-) TimerEvent: {}
+[8.763515] (-) TimerEvent: {}
+[8.863793] (-) TimerEvent: {}
+[8.971587] (-) TimerEvent: {}
+[9.075522] (-) TimerEvent: {}
+[9.175862] (-) TimerEvent: {}
+[9.279744] (-) TimerEvent: {}
+[9.383616] (-) TimerEvent: {}
+[9.487523] (-) TimerEvent: {}
+[9.591510] (-) TimerEvent: {}
+[9.695551] (-) TimerEvent: {}
+[9.795850] (-) TimerEvent: {}
+[9.899583] (-) TimerEvent: {}
+[10.003510] (-) TimerEvent: {}
+[10.103850] (-) TimerEvent: {}
+[10.195778] (aruco_follower) StdoutLine: {'line': b'running egg_info\n'}
+[10.203951] (-) TimerEvent: {}
+[10.207658] (aruco_follower) StdoutLine: {'line': b'writing ../../build/aruco_follower/aruco_follower.egg-info/PKG-INFO\n'}
+[10.211936] (aruco_follower) StdoutLine: {'line': b'writing dependency_links to ../../build/aruco_follower/aruco_follower.egg-info/dependency_links.txt\n'}
+[10.227680] (aruco_follower) StdoutLine: {'line': b'writing entry points to ../../build/aruco_follower/aruco_follower.egg-info/entry_points.txt\n'}
+[10.227909] (aruco_follower) StdoutLine: {'line': b'writing requirements to ../../build/aruco_follower/aruco_follower.egg-info/requires.txt\n'}
+[10.227967] (aruco_follower) StdoutLine: {'line': b'writing top-level names to ../../build/aruco_follower/aruco_follower.egg-info/top_level.txt\n'}
+[10.235691] (webcam) StdoutLine: {'line': b'running egg_info\n'}
+[10.235907] (webcam) StdoutLine: {'line': b'writing ../../build/webcam/webcam.egg-info/PKG-INFO\n'}
+[10.251514] (webcam) StdoutLine: {'line': b'writing dependency_links to ../../build/webcam/webcam.egg-info/dependency_links.txt\n'}
+[10.251746] (webcam) StdoutLine: {'line': b'writing entry points to ../../build/webcam/webcam.egg-info/entry_points.txt\n'}
+[10.251864] (webcam) StdoutLine: {'line': b'writing requirements to ../../build/webcam/webcam.egg-info/requires.txt\n'}
+[10.251943] (webcam) StdoutLine: {'line': b'writing top-level names to ../../build/webcam/webcam.egg-info/top_level.txt\n'}
+[10.307515] (-) TimerEvent: {}
+[10.411693] (-) TimerEvent: {}
+[10.515516] (-) TimerEvent: {}
+[10.563695] (webcam) StdoutLine: {'line': b"reading manifest file '../../build/webcam/webcam.egg-info/SOURCES.txt'\n"}
+[10.563997] (aruco_follower) StdoutLine: {'line': b"reading manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'\n"}
+[10.575550] (webcam) StdoutLine: {'line': b"writing manifest file '../../build/webcam/webcam.egg-info/SOURCES.txt'\n"}
+[10.575771] (webcam) StdoutLine: {'line': b'running build\n'}
+[10.575828] (webcam) StdoutLine: {'line': b'running build_py\n'}
+[10.599799] (aruco_follower) StdoutLine: {'line': b"writing manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'\n"}
+[10.599923] (webcam) StdoutLine: {'line': b'running install\n'}
+[10.603496] (aruco_follower) StdoutLine: {'line': b'running build\n'}
+[10.603587] (aruco_follower) StdoutLine: {'line': b'running build_py\n'}
+[10.603635] (aruco_follower) StdoutLine: {'line': b'copying aruco_follower/aruco_follower.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib/aruco_follower\n'}
+[10.603698] (aruco_follower) StdoutLine: {'line': b'running install\n'}
+[10.607488] (webcam) StdoutLine: {'line': b'running install_lib\n'}
+[10.607771] (aruco_follower) StdoutLine: {'line': b'running install_lib\n'}
+[10.615624] (-) TimerEvent: {}
+[10.619457] (aruco_follower) StdoutLine: {'line': b'copying /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib/aruco_follower/aruco_follower.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower\n'}
+[10.619801] (webcam) StdoutLine: {'line': b'running install_data\n'}
+[10.627563] (webcam) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.628003] (aruco_follower) StdoutLine: {'line': b'byte-compiling /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower/aruco_follower.py to aruco_follower.cpython-38.pyc\n'}
+[10.643851] (webcam) StdoutLine: {'line': b"removing '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[10.651515] (aruco_follower) StdoutLine: {'line': b'running install_data\n'}
+[10.651738] (aruco_follower) StdoutLine: {'line': b'running install_egg_info\n'}
+[10.651791] (webcam) StdoutLine: {'line': b'Copying ../../build/webcam/webcam.egg-info to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/python3.8/site-packages/webcam-0.0.0-py3.8.egg-info\n'}
+[10.659665] (webcam) StdoutLine: {'line': b'running install_scripts\n'}
+[10.659985] (aruco_follower) StdoutLine: {'line': b"removing '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower-0.0.0-py3.8.egg-info' (and everything under it)\n"}
+[10.663804] (aruco_follower) StdoutLine: {'line': b'Copying ../../build/aruco_follower/aruco_follower.egg-info to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower-0.0.0-py3.8.egg-info\n'}
+[10.671545] (aruco_follower) StdoutLine: {'line': b'running install_scripts\n'}
+[10.715694] (-) TimerEvent: {}
+[10.819526] (-) TimerEvent: {}
+[10.823650] (webcam) StdoutLine: {'line': b'Installing webcam_pub script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/webcam\n'}
+[10.835600] (aruco_follower) StdoutLine: {'line': b'Installing follower_node script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/aruco_follower\n'}
+[10.847679] (webcam) StdoutLine: {'line': b'Installing webcam_sub script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/webcam/lib/webcam\n'}
+[10.847878] (webcam) StdoutLine: {'line': b"writing list of installed files to '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/webcam/install.log'\n"}
+[10.847931] (aruco_follower) StdoutLine: {'line': b'Installing webcam_pub script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/aruco_follower\n'}
+[10.851487] (aruco_follower) StdoutLine: {'line': b'Installing webcam_sub script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/aruco_follower\n'}
+[10.851647] (aruco_follower) StdoutLine: {'line': b"writing list of installed files to '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/install.log'\n"}
+[10.919640] (-) TimerEvent: {}
+[11.023652] (-) TimerEvent: {}
+[11.055513] (aruco_follower) CommandEnded: {'returncode': 0}
+[11.123929] (-) TimerEvent: {}
+[11.243542] (-) TimerEvent: {}
+[11.291666] (aruco_follower) JobEnded: {'identifier': 'aruco_follower', 'rc': 0}
+[11.319774] (webcam) CommandEnded: {'returncode': 0}
+[11.347508] (-) TimerEvent: {}
+[11.427731] (webcam) JobEnded: {'identifier': 'webcam', 'rc': 0}
+[11.435524] (-) EventReactorShutdown: {}

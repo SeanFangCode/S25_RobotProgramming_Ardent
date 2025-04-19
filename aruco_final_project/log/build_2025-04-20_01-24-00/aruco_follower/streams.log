@@ -1,0 +1,26 @@
+[8.340s] Invoking command in '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/src/aruco_follower': PYTHONPATH=/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/prefix_override:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/aruco_follower build --build-base /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build install --record /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/install.log --install-scripts $base/lib/aruco_follower --single-version-externally-managed
+[10.184s] running egg_info
+[10.196s] writing ../../build/aruco_follower/aruco_follower.egg-info/PKG-INFO
+[10.212s] writing dependency_links to ../../build/aruco_follower/aruco_follower.egg-info/dependency_links.txt
+[10.216s] writing entry points to ../../build/aruco_follower/aruco_follower.egg-info/entry_points.txt
+[10.216s] writing requirements to ../../build/aruco_follower/aruco_follower.egg-info/requires.txt
+[10.216s] writing top-level names to ../../build/aruco_follower/aruco_follower.egg-info/top_level.txt
+[10.552s] reading manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'
+[10.588s] writing manifest file '../../build/aruco_follower/aruco_follower.egg-info/SOURCES.txt'
+[10.592s] running build
+[10.592s] running build_py
+[10.592s] copying aruco_follower/aruco_follower.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib/aruco_follower
+[10.592s] running install
+[10.596s] running install_lib
+[10.608s] copying /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build/lib/aruco_follower/aruco_follower.py -> /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower
+[10.620s] byte-compiling /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower/aruco_follower.py to aruco_follower.cpython-38.pyc
+[10.640s] running install_data
+[10.640s] running install_egg_info
+[10.652s] removing '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower-0.0.0-py3.8.egg-info' (and everything under it)
+[10.656s] Copying ../../build/aruco_follower/aruco_follower.egg-info to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages/aruco_follower-0.0.0-py3.8.egg-info
+[10.660s] running install_scripts
+[10.824s] Installing follower_node script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/aruco_follower
+[10.836s] Installing webcam_pub script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/aruco_follower
+[10.840s] Installing webcam_sub script to /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/aruco_follower
+[10.840s] writing list of installed files to '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/install.log'
+[11.044s] Invoked command in '/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/src/aruco_follower' returned '0': PYTHONPATH=/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/prefix_override:/home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/install/aruco_follower/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/aruco_follower build --build-base /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/build install --record /home/yahboom/S25_RobotProgramming_Ardent/aruco_final_project/build/aruco_follower/install.log --install-scripts $base/lib/aruco_follower --single-version-externally-managed

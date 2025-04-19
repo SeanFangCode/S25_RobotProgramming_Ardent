@@ -1,3 +1,5 @@
 [console_scripts]
 follower_node = aruco_follower.aruco_follower:main
+webcam_pub = webcam.cam_pub:main
+webcam_sub = webcam.cam_sub:main
 

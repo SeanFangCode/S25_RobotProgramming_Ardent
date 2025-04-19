@@ -10,6 +10,8 @@ setup.py
 ../../build/aruco_follower/aruco_follower.egg-info/zip-safe
 aruco_follower/__init__.py
 aruco_follower/aruco_follower.py
+aruco_follower/cam_pub.py
+aruco_follower/cam_sub.py
 resource/aruco_follower
 test/test_copyright.py
 test/test_flake8.py
