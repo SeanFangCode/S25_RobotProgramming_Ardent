@@ -56,17 +56,37 @@ class FollowerNode(Node):
         cv2.resizeWindow('Robot View', 640, 480)
         print("[INIT] OpenCV window created")
 
-    def load_actions_config(self):
+   def load_actions_config(self):
+        from ament_index_python.packages import get_package_share_directory
         pkg_share = get_package_share_directory('aruco_follower')
-        config_path = os.path.join(pkg_share, 'config', 'actions.yaml')
+
+        # Possible locations for actions.yaml
+        candidate_paths = [
+            os.path.join(pkg_share, 'config', 'actions.yaml'),
+            os.path.join(pkg_share, 'actions.yaml'),
+        ]
+
+        config_path = None
+        for p in candidate_paths:
+            exists = os.path.exists(p)
+            print(f"[LOAD_CONFIG] Checking {p} → exists={exists}")
+            if exists:
+                config_path = p
+                break
+
+        if config_path is None:
+            print("[LOAD_CONFIG] No actions.yaml found in any expected location!")
+            self.get_logger().error("actions.yaml not found; please install it under share/aruco_follower/(config/)")
+            return {}
+
         print(f"[LOAD_CONFIG] Loading YAML from: {config_path}")
         try:
             with open(config_path, 'r') as f:
                 cfg = yaml.safe_load(f)
-                print(f"[LOAD_CONFIG] YAML contents: {cfg}")
-                return cfg
+            print(f"[LOAD_CONFIG] YAML contents: {cfg}")
+            return cfg or {}
         except Exception as e:
-            print(f"[LOAD_CONFIG] Failed to load actions config: {e}")
+            print(f"[LOAD_CONFIG] Failed to parse YAML: {e}")
             self.get_logger().error(f'Failed to load actions config: {str(e)}')
             return {}
 
