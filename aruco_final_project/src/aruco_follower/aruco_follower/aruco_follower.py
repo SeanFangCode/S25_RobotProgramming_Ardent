@@ -46,11 +46,10 @@ class FollowerNode(Node):
             return
 
         # Detect ArUco markers
-        detection_result = self.detector.detectMarkers(cv_image)
-        corners = detection_result.corners
-        ids = detection_result.ids
-        
+        corners, ids, _ = self.detector.detectMarkers(cv_image)
+
         processed_image = cv_image.copy()
+        
         
         if ids is not None:
             # Draw detected markers
