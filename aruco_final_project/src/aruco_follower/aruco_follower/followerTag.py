@@ -58,15 +58,8 @@
 #             return {}
 
 #     def setup_aruco_detector(self):
-#         tag_family = self.settings.get('tag_family', '36h11')
 #         try:
-#             if tag_family == '36h11':
-#                 self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_APRILTAG_36h11)
-#             elif tag_family == '16h5':
-#                 self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_APRILTAG_16h5)
-#             else:
-#                 raise ValueError(f"Unsupported tag family: {tag_family}")
-                
+#             self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_250)    
 #             self.parameters = aruco.DetectorParameters()
 #             self.detector = aruco.ArucoDetector(self.aruco_dict, self.parameters)
 #         except Exception as e:
