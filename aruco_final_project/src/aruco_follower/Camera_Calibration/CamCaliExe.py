@@ -6,7 +6,7 @@ import os
 import glob
 
 # Checkerboard dimensions
-CHECKERBOARD = (7, 4)
+CHECKERBOARD = (8, 6)
 criteria = (cv2.TERM_CRITERIA_EPS + cv2.TERM_CRITERIA_MAX_ITER, 30, 0.001)
 
 # Directory to save captured images
