@@ -52,7 +52,7 @@ class WebcamSub(Node):
 
         # define subscriber
         #####
-        self.img_subscription = self.create_subscription(Image, 'image_raw', self.img_callback, 10)
+        self.img_subscription = self.create_subscription(Image, 'image_raw', self.img_callback, 1)
         #####
         
         self.img_subscription # prevent unused varaibale warning
