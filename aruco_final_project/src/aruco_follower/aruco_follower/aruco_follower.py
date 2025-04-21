@@ -122,7 +122,7 @@ class FollowerNode(Node):
             self.current_command_timer = self.create_timer(
                 duration, 
                 self.stop_robot,
-                oneshot=True
+                ##oneshot=True
             )
 
     def check_detection_timeout(self):
