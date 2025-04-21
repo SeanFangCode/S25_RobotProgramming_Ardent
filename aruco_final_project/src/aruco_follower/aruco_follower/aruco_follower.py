@@ -53,11 +53,12 @@ class FollowerNode(Node):
         package_name = 'aruco_follower'
         try:
             package_share = get_package_share_directory(package_name)
-            config_path = os.path.join(package_share, 'actions.yaml')
+            # Updated path to config directory
+            config_path = os.path.join(package_share, 'config', 'actions.yaml')
             with open(config_path, 'r') as f:
                 return yaml.safe_load(f)
         except Exception as e:
-            self.get_logger().error(f'Failed to load actions config: {str(e)}')
+            self.get_logger().error(f'Config load error: {str(e)}')
             return {}
 
     def setup_aruco_detector(self):
