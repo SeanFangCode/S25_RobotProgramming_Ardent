@@ -1,0 +1,57 @@
+# april_tag_commands.yaml
+# Command configurations for different AprilTag IDs
+
+# Movement parameters structure:
+# tag_<ID>:
+#   linear:
+#     x: forward/backward speed (m/s)
+#     y: left/right speed (m/s) (for omnidirectional robots)
+#     z: up/down (typically unused)
+#   angular:
+#     x: roll rate (typically unused)
+#     y: pitch rate (typically unused)
+#     z: yaw rate (rad/s)
+#   duration: time to maintain command (seconds)
+
+tag_0:  # Stop command
+  linear: {x: 0.0, y: 0.0, z: 0.0}
+  angular: {x: 0.0, y: 0.0, z: 0.0}
+  duration: 0.5
+
+tag_1:  # Move forward
+  linear: {x: 0.5, y: 0.0, z: 0.0}
+  angular: {x: 0.0, y: 0.0, z: 0.0}
+  duration: 2.0
+
+tag_2:  # Move backward
+  linear: {x: -0.4, y: 0.0, z: 0.0}
+  angular: {x: 0.0, y: 0.0, z: 0.0}
+  duration: 2.0
+
+tag_3:  # Turn left (counter-clockwise)
+  linear: {x: 0.0, y: 0.0, z: 0.0}
+  angular: {x: 0.0, y: 0.0, z: 0.8}
+  duration: 1.0
+
+tag_4:  # Turn right (clockwise)
+  linear: {x: 0.0, y: 0.0, z: 0.0}
+  angular: {x: 0.0, y: 0.0, z: -0.8}
+  duration: 1.0
+
+tag_5:  # Diagonal left forward
+  linear: {x: 0.3, y: 0.0, z: 0.0}
+  angular: {x: 0.0, y: 0.0, z: 0.4}
+  duration: 1.5
+
+tag_6:  # Diagonal right forward
+  linear: {x: 0.3, y: 0.0, z: 0.0}
+  angular: {x: 0.0, y: 0.0, z: -0.4}
+  duration: 1.5
+
+# Configuration parameters
+settings:
+  max_linear_speed: 0.8    # m/s
+  max_angular_speed: 1.2   # rad/s
+  cmd_vel_topic: "/cmd_vel"
+  tag_family: "36h11"
+  detection_timeout: 1.0   # seconds before stopping if tag is lost
