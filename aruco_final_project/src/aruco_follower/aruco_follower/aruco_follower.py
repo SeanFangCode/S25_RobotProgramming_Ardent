@@ -50,7 +50,7 @@ class FollowerNode(Node):
         cv2.resizeWindow('Robot View', 640, 480)
 
     def load_actions_config(self):
-        package_name = 'aruco_follower'  # Replace with your actual package name
+        package_name = 'aruco_follower'
         try:
             package_share = get_package_share_directory(package_name)
             config_path = os.path.join(package_share, 'actions.yaml')
