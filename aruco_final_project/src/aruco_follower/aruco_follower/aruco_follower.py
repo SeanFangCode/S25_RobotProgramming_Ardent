@@ -22,8 +22,8 @@ class FollowerNode(Node):
         self.detector = aruco.ArucoDetector(self.aruco_dict, self.parameters)
         
         # Camera calibration parameters (replace with actual calibrated values)
-        self.camera_matrix = np.array([[500, 0, 320], [0, 500, 240], [0, 0, 1]])
-        self.dist_coeffs = np.zeros((4, 1))
+        self.camera_matrix = np.array([[520.19, 0.0, 346.28], [0.0, 520.23, 265.28], [0.0, 0.0, 1.0]])
+        self.dist_coeffs = np.array([-0.1, -0.296, -0.004, 0.0016, 0.9144])
         
         # Control parameters
         self.target_distance = 0.5  # meters
