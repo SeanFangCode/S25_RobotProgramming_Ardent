@@ -10,87 +10,108 @@ import numpy as np
 import yaml
 import os
 from rclpy.duration import Duration
+from ament_index_python.packages import get_package_share_directory
 
 class FollowerNode(Node):
     def __init__(self):
         super().__init__('follower_node')
-        
+        print("[INIT] Starting FollowerNode")
+
         # Load action configuration
         self.actions_config = self.load_actions_config()
+        print(f"[INIT] actions_config: {self.actions_config}")
         self.commands = {k: v for k, v in self.actions_config.items() if k.startswith('tag_')}
+        print(f"[INIT] Available commands keys: {list(self.commands.keys())}")
         self.settings = self.actions_config.get('settings', {})
-        
+        print(f"[INIT] Settings: {self.settings}")
+
         # Subscriber and publisher
         self.img_subscription = self.create_subscription(
-            Image, 
-            'image_raw', 
-            self.image_callback, 
+            Image,
+            'image_raw',
+            self.image_callback,
             1
         )
         self.cmd_pub = self.create_publisher(
-            Twist, 
-            self.settings.get('cmd_vel_topic', '/cmd_vel'), 
+            Twist,
+            self.settings.get('cmd_vel_topic', '/cmd_vel'),
             10
         )
-        
+        print(f"[INIT] Subscribed to image_raw, publishing to {self.settings.get('cmd_vel_topic', '/cmd_vel')}")
+
         # ArUco parameters
         self.setup_aruco_detector()
-        
+        print("[INIT] ArUco detector set up")
+
         # Timing and state management
         self.last_detection_time = self.get_clock().now()
         self.current_command_timer = None
         self.active_command = None
-        
+
         self.bridge = CvBridge()
         self.twist_msg = Twist()
 
         # Create OpenCV window
         cv2.namedWindow('Robot View', cv2.WINDOW_NORMAL)
         cv2.resizeWindow('Robot View', 640, 480)
+        print("[INIT] OpenCV window created")
 
     def load_actions_config(self):
-        config_path = os.path.join(os.getcwd(), 'actions.yaml')
+        pkg_share = get_package_share_directory('aruco_follower')
+        config_path = os.path.join(pkg_share, 'config', 'actions.yaml')
+        print(f"[LOAD_CONFIG] Loading YAML from: {config_path}")
         try:
             with open(config_path, 'r') as f:
-                return yaml.safe_load(f)
+                cfg = yaml.safe_load(f)
+                print(f"[LOAD_CONFIG] YAML contents: {cfg}")
+                return cfg
         except Exception as e:
+            print(f"[LOAD_CONFIG] Failed to load actions config: {e}")
             self.get_logger().error(f'Failed to load actions config: {str(e)}')
             return {}
 
     def setup_aruco_detector(self):
         try:
-            self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_250)    
+            self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_250)
             self.parameters = aruco.DetectorParameters()
             self.detector = aruco.ArucoDetector(self.aruco_dict, self.parameters)
         except Exception as e:
+            print(f"[ARUCO_SETUP] ArUco setup failed: {e}")
             self.get_logger().error(f'ArUco setup failed: {str(e)}')
             raise
 
     def image_callback(self, msg):
+        print("[CALLBACK] Received image")
         try:
             cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
         except Exception as e:
+            print(f"[CALLBACK] Image conversion error: {e}")
             self.get_logger().error(f'Image conversion error: {str(e)}')
             return
 
-        processed_image = cv_image.copy()
         corners, ids, _ = self.detector.detectMarkers(cv_image)
+        print(f"[CALLBACK] detectMarkers → ids: {ids}, number of corners sets: {len(corners) if corners is not None else 0}")
+
+        processed_image = cv_image.copy()
         command_executed = False
 
-        if ids is not None:
+        if ids is not None and len(ids) > 0:
             self.last_detection_time = self.get_clock().now()
             aruco.drawDetectedMarkers(processed_image, corners, ids)
-            
-            # Process first detected tag
-            first_id = ids[0][0]
+
+            first_id = int(ids[0][0])
             command_key = f"tag_{first_id}"
             command = self.commands.get(command_key)
+            print(f"[CALLBACK] First detected ID: {first_id} → looking for key '{command_key}' → command: {command}")
 
             if command:
+                print(f"[CALLBACK] Executing command for {command_key}: {command}")
                 self.execute_command(command)
                 command_executed = True
                 cv2.putText(processed_image, f"Executing: {command_key}", (10, 150),
-                          cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+            else:
+                print(f"[CALLBACK] No command found for {command_key}")
 
         # Handle command timeout
         if not command_executed:
@@ -100,58 +121,65 @@ class FollowerNode(Node):
         cv2.waitKey(1)
 
     def execute_command(self, command):
-        # Cancel any previous command timer
+        print(f"[EXECUTE] Received command: {command}")
         if self.current_command_timer:
+            print("[EXECUTE] Cancelling previous timer")
             self.current_command_timer.cancel()
 
-        # Set velocities from command
-        linear = command.get('linear', {'x': 0.0, 'y': 0.0, 'z': 0.0})
-        angular = command.get('angular', {'x': 0.0, 'y': 0.0, 'z': 0.0})
+        linear = command.get('linear', {'x': 0.0})
+        angular = command.get('angular', {'z': 0.0})
         duration = command.get('duration', 0.0)
+        print(f"[EXECUTE] linear={linear}, angular={angular}, duration={duration}")
 
-        # Apply velocity limits
         max_linear = self.settings.get('max_linear_speed', 0.5)
         max_angular = self.settings.get('max_angular_speed', 1.0)
-        
+
         self.twist_msg.linear.x = np.clip(linear.get('x', 0.0), -max_linear, max_linear)
         self.twist_msg.angular.z = np.clip(angular.get('z', 0.0), -max_angular, max_angular)
+        print(f"[EXECUTE] Publishing Twist → linear.x={self.twist_msg.linear.x}, angular.z={self.twist_msg.angular.z}")
         self.cmd_pub.publish(self.twist_msg)
 
-        # Set command timeout timer
         if duration > 0:
+            print(f"[EXECUTE] Setting up stop timer for {duration}s")
             self.current_command_timer = self.create_timer(
-                duration, 
-                self.stop_robot,
-                ##oneshot=True
+                duration,
+                self.stop_robot
             )
 
     def check_detection_timeout(self):
         timeout = self.settings.get('detection_timeout', 1.0)
-        elapsed = self.get_clock().now() - self.last_detection_time
-        if elapsed > Duration(seconds=timeout):
+        elapsed = (self.get_clock().now() - self.last_detection_time).nanoseconds * 1e-9
+        print(f"[TIMEOUT] elapsed since last detection: {elapsed:.2f}s (timeout={timeout}s)")
+        if elapsed > timeout:
+            print("[TIMEOUT] Timeout exceeded, stopping robot")
             self.stop_robot()
 
     def stop_robot(self):
+        print("[STOP] Stopping robot (publishing zero velocities)")
         self.twist_msg.linear.x = 0.0
         self.twist_msg.angular.z = 0.0
         self.cmd_pub.publish(self.twist_msg)
         if self.current_command_timer:
+            print("[STOP] Cancelling timer")
             self.current_command_timer.cancel()
             self.current_command_timer = None
 
     def __del__(self):
+        print("[CLEANUP] Destroying OpenCV windows")
         cv2.destroyAllWindows()
 
 def main(args=None):
+    print("[MAIN] Initializing rclpy")
     rclpy.init(args=args)
-    follower_node = FollowerNode()
+    node = FollowerNode()
     try:
-        rclpy.spin(follower_node)
+        rclpy.spin(node)
     except KeyboardInterrupt:
-        pass
+        print("[MAIN] KeyboardInterrupt, shutting down")
     finally:
-        follower_node.destroy_node()
+        node.destroy_node()
         rclpy.shutdown()
+        print("[MAIN] rclpy shutdown")
 
 if __name__ == '__main__':
     main()
