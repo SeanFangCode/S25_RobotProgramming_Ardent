@@ -55,8 +55,8 @@ class FollowerNode(Node):
         cv2.namedWindow('Robot View', cv2.WINDOW_NORMAL)
         cv2.resizeWindow('Robot View', 640, 480)
         print("[INIT] OpenCV window created")
-
-   def load_actions_config(self):
+        
+    def load_actions_config(self):
         from ament_index_python.packages import get_package_share_directory
         pkg_share = get_package_share_directory('aruco_follower')
 
@@ -73,7 +73,7 @@ class FollowerNode(Node):
             if exists:
                 config_path = p
                 break
-
+            
         if config_path is None:
             print("[LOAD_CONFIG] No actions.yaml found in any expected location!")
             self.get_logger().error("actions.yaml not found; please install it under share/aruco_follower/(config/)")
