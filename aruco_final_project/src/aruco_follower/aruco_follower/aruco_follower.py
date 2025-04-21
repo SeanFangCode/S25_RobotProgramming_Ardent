@@ -10,7 +10,7 @@ import numpy as np
 import yaml
 import os
 from rclpy.duration import Duration
-from ament_index_python.packages import get_package_share_directory
+
 
 class FollowerNode(Node):
     def __init__(self):
@@ -50,15 +50,12 @@ class FollowerNode(Node):
         cv2.resizeWindow('Robot View', 640, 480)
 
     def load_actions_config(self):
-        package_name = 'aruco_follower'
+        config_path = os.path.join(os.getcwd(), 'actions.yaml')
         try:
-            package_share = get_package_share_directory(package_name)
-            # Updated path to config directory
-            config_path = os.path.join(package_share, 'config', 'actions.yaml')
             with open(config_path, 'r') as f:
                 return yaml.safe_load(f)
         except Exception as e:
-            self.get_logger().error(f'Config load error: {str(e)}')
+            self.get_logger().error(f'Failed to load actions config: {str(e)}')
             return {}
 
     def setup_aruco_detector(self):
