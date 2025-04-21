@@ -7,36 +7,71 @@ from geometry_msgs.msg import Twist
 import cv2
 import cv2.aruco as aruco
 import numpy as np
+import yaml
+import os
+from rclpy.duration import Duration
 
 class FollowerNode(Node):
     def __init__(self):
         super().__init__('follower_node')
         
+        # Load action configuration
+        self.actions_config = self.load_actions_config()
+        self.commands = {k: v for k, v in self.actions_config.items() if k.startswith('tag_')}
+        self.settings = self.actions_config.get('settings', {})
+        
         # Subscriber and publisher
-        self.img_subscription = self.create_subscription(Image, 'image_raw', self.image_callback, 1)
-        self.cmd_pub = self.create_publisher(Twist, '/cmd_vel', 10)
+        self.img_subscription = self.create_subscription(
+            Image, 
+            'image_raw', 
+            self.image_callback, 
+            1
+        )
+        self.cmd_pub = self.create_publisher(
+            Twist, 
+            self.settings.get('cmd_vel_topic', '/cmd_vel'), 
+            10
+        )
         
         # ArUco parameters
-        self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_4X4_250)
-        self.parameters = aruco.DetectorParameters()
-        self.detector = aruco.ArucoDetector(self.aruco_dict, self.parameters)
+        self.setup_aruco_detector()
         
-        # Camera calibration parameters (replace with actual calibrated values)
-        self.camera_matrix = np.array([[520.19, 0.0, 346.28], [0.0, 520.23, 265.28], [0.0, 0.0, 1.0]])
-        self.dist_coeffs = np.array([-0.1, -0.296, -0.004, 0.0016, 0.9144])
-        
-        # Control parameters
-        self.target_distance = 0.5  # meters
-        self.Kp_dist = 0.5
-        self.Kp_angle = 1.0
+        # Timing and state management
+        self.last_detection_time = self.get_clock().now()
+        self.current_command_timer = None
+        self.active_command = None
         
         self.bridge = CvBridge()
         self.twist_msg = Twist()
-        self.last_error = 0.0
 
         # Create OpenCV window
         cv2.namedWindow('Robot View', cv2.WINDOW_NORMAL)
         cv2.resizeWindow('Robot View', 640, 480)
+
+    def load_actions_config(self):
+        config_path = os.path.join(os.getcwd(), 'actions.yaml')
+        try:
+            with open(config_path, 'r') as f:
+                return yaml.safe_load(f)
+        except Exception as e:
+            self.get_logger().error(f'Failed to load actions config: {str(e)}')
+            return {}
+
+    def setup_aruco_detector(self):
+        tag_family = self.settings.get('tag_family', '36h11')
+        try:
+            if tag_family == '36h11':
+                self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_APRILTAG_36h11)
+            elif tag_family == '16h5':
+                self.aruco_dict = aruco.getPredefinedDictionary(aruco.DICT_APRILTAG_16h5)
+            else:
+                raise ValueError(f"Unsupported tag family: {tag_family}")
+                
+            self.parameters = aruco.DetectorParameters()
+            self.detector = aruco.ArucoDetector(self.aruco_dict, self.parameters)
+        except Exception as e:
+            self.get_logger().error(f'ArUco setup failed: {str(e)}')
+            raise
 
     def image_callback(self, msg):
         try:
@@ -45,78 +80,71 @@ class FollowerNode(Node):
             self.get_logger().error(f'Image conversion error: {str(e)}')
             return
 
-        # Detect ArUco markers
-        corners, ids, _ = self.detector.detectMarkers(cv_image)
-
         processed_image = cv_image.copy()
-        
-        
+        corners, ids, _ = self.detector.detectMarkers(cv_image)
+        command_executed = False
+
         if ids is not None:
-            # Draw detected markers
+            self.last_detection_time = self.get_clock().now()
             aruco.drawDetectedMarkers(processed_image, corners, ids)
             
-            # Estimate pose for each detected marker
-            rvecs, tvecs, _ = aruco.estimatePoseSingleMarkers(
-                corners, 0.05, self.camera_matrix, self.dist_coeffs)
-            
-            # Process first detected marker
-            distance = np.linalg.norm(tvecs[0][0])
-            rotation_matrix, _ = cv2.Rodrigues(rvecs[0])
-            euler_angles = self.rotation_matrix_to_euler_angles(rotation_matrix)
-            angle = np.degrees(euler_angles[2])  # Yaw angle
-            
-            # Draw axis and info
-            cv2.drawFrameAxes(processed_image, self.camera_matrix, self.dist_coeffs,
-                            rvecs[0], tvecs[0], 0.1)
-            
-            # Add text overlay
-            cv2.putText(processed_image, f"Distance: {distance:.2f}m", (10, 30),
-                       cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
-            cv2.putText(processed_image, f"Angle: {angle:.1f}deg", (10, 60),
-                       cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
-            cv2.putText(processed_image, f"Linear: {self.twist_msg.linear.x:.2f}", (10, 90),
-                       cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
-            cv2.putText(processed_image, f"Angular: {self.twist_msg.angular.z:.2f}", (10, 120),
-                       cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+            # Process first detected tag
+            first_id = ids[0][0]
+            command_key = f"tag_{first_id}"
+            command = self.commands.get(command_key)
 
-            # Calculate control outputs
-            error_dist = distance - self.target_distance
-            error_angle = -angle  # Adjust direction
-            
-            # Proportional control
-            linear_speed = self.Kp_dist * error_dist
-            angular_speed = self.Kp_angle * error_angle
-            
-            # Publish control command
-            self.twist_msg.linear.x = np.clip(linear_speed, -0.2, 0.2)
-            self.twist_msg.angular.z = np.clip(angular_speed, -0.5, 0.5)
-            self.cmd_pub.publish(self.twist_msg)
-        else:
-            # Add "No marker detected" text
-            cv2.putText(processed_image, "No ArUco marker detected", (10, 30),
-                       cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 0, 255), 2)
-            # Stop robot
-            self.twist_msg.linear.x = 0.0
-            self.twist_msg.angular.z = 0.0
-            self.cmd_pub.publish(self.twist_msg)
+            if command:
+                self.execute_command(command)
+                command_executed = True
+                cv2.putText(processed_image, f"Executing: {command_key}", (10, 150),
+                          cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
 
-        # Display processed image
+        # Handle command timeout
+        if not command_executed:
+            self.check_detection_timeout()
+
         cv2.imshow('Robot View', processed_image)
         cv2.waitKey(1)
 
-    @staticmethod
-    def rotation_matrix_to_euler_angles(R):
-        sy = np.sqrt(R[0,0] * R[0,0] +  R[1,0] * R[1,0])
-        singular = sy < 1e-6
-        if not singular:
-            x = np.arctan2(R[2,1], R[2,2])
-            y = np.arctan2(-R[2,0], sy)
-            z = np.arctan2(R[1,0], R[0,0])
-        else:
-            x = np.arctan2(-R[1,2], R[1,1])
-            y = np.arctan2(-R[2,0], sy)
-            z = 0
-        return np.array([x, y, z])
+    def execute_command(self, command):
+        # Cancel any previous command timer
+        if self.current_command_timer:
+            self.current_command_timer.cancel()
+
+        # Set velocities from command
+        linear = command.get('linear', {'x': 0.0, 'y': 0.0, 'z': 0.0})
+        angular = command.get('angular', {'x': 0.0, 'y': 0.0, 'z': 0.0})
+        duration = command.get('duration', 0.0)
+
+        # Apply velocity limits
+        max_linear = self.settings.get('max_linear_speed', 0.5)
+        max_angular = self.settings.get('max_angular_speed', 1.0)
+        
+        self.twist_msg.linear.x = np.clip(linear.get('x', 0.0), -max_linear, max_linear)
+        self.twist_msg.angular.z = np.clip(angular.get('z', 0.0), -max_angular, max_angular)
+        self.cmd_pub.publish(self.twist_msg)
+
+        # Set command timeout timer
+        if duration > 0:
+            self.current_command_timer = self.create_timer(
+                duration, 
+                self.stop_robot,
+                oneshot=True
+            )
+
+    def check_detection_timeout(self):
+        timeout = self.settings.get('detection_timeout', 1.0)
+        elapsed = self.get_clock().now() - self.last_detection_time
+        if elapsed > Duration(seconds=timeout):
+            self.stop_robot()
+
+    def stop_robot(self):
+        self.twist_msg.linear.x = 0.0
+        self.twist_msg.angular.z = 0.0
+        self.cmd_pub.publish(self.twist_msg)
+        if self.current_command_timer:
+            self.current_command_timer.cancel()
+            self.current_command_timer = None
 
     def __del__(self):
         cv2.destroyAllWindows()
