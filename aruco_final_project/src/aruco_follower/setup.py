@@ -1,4 +1,7 @@
 from setuptools import setup
+import os
+from glob import glob
+
 
 package_name = 'aruco_follower'
 
@@ -10,6 +13,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        # Add this line to install your YAML file
+        (os.path.join('share', package_name), ['actions.yaml']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,

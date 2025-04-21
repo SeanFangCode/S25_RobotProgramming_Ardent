@@ -10,6 +10,7 @@ import numpy as np
 import yaml
 import os
 from rclpy.duration import Duration
+from ament_index_python.packages import get_package_share_directory
 
 class FollowerNode(Node):
     def __init__(self):
@@ -49,8 +50,10 @@ class FollowerNode(Node):
         cv2.resizeWindow('Robot View', 640, 480)
 
     def load_actions_config(self):
-        config_path = os.path.join(os.getcwd(), 'actions.yaml')
+        package_name = 'aruco_follower'  # Replace with your actual package name
         try:
+            package_share = get_package_share_directory(package_name)
+            config_path = os.path.join(package_share, 'actions.yaml')
             with open(config_path, 'r') as f:
                 return yaml.safe_load(f)
         except Exception as e:
