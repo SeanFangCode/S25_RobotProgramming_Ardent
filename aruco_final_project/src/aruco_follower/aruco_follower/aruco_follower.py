@@ -55,6 +55,76 @@ class FollowerNode(Node):
         cv2.namedWindow('Robot View', cv2.WINDOW_NORMAL)
         cv2.resizeWindow('Robot View', 640, 480)
         print("[INIT] OpenCV window created")
+
+    def send_distance_request(self):
+        # Helper method to send distance request for tag ID 3
+        if not self.distance_client.service_is_ready():
+            print("[DISTANCE] Service not available, skipping request")
+            return
+
+        request = ArUcoDistance.Request()
+        request.tag_id = 3  # We're specifically checking for tag ID 3
+        
+        print("[DISTANCE] Sending request for tag 3 distance...")
+        future = self.distance_client.call_async(request)
+        future.add_done_callback(self.distance_response_callback)
+
+    def distance_response_callback(self, future):
+        # Handle the service response
+        try:
+            response = future.result()
+            if response.success:
+                print(f"[DISTANCE] Distance to tag 3: {response.distance:.2f} meters")
+            else:
+                print("[DISTANCE] Failed to get distance measurement")
+        except Exception as e:
+            print(f"[DISTANCE] Service call failed: {str(e)}")
+
+    def image_callback(self, msg):
+        print("[CALLBACK] Received image")
+        try:
+            cv_image = self.bridge.imgmsg_to_cv2(msg, "bgr8")
+        except Exception as e:
+            print(f"[CALLBACK] Image conversion error: {e}")
+            self.get_logger().error(f'Image conversion error: {str(e)}')
+            return
+
+        corners, ids, _ = self.detector.detectMarkers(cv_image)
+        print(f"[CALLBACK] detectMarkers → ids: {ids}, number of corners sets: {len(corners) if corners is not None else 0}")
+
+        processed_image = cv_image.copy()
+        command_executed = False
+
+        if ids is not None and len(ids) > 0:
+            self.last_detection_time = self.get_clock().now()
+            aruco.drawDetectedMarkers(processed_image, corners, ids)
+
+            # Check if tag ID 3 is present
+            if 3 in ids:
+                print("[CALLBACK] Detected tag ID 3, requesting distance...")
+                self.send_distance_request()
+
+            # Original command processing remains
+            first_id = int(ids[0][0])
+            command_key = f"tag_{first_id}"
+            command = self.commands.get(command_key)
+            print(f"[CALLBACK] First detected ID: {first_id} → looking for key '{command_key}' → command: {command}")
+
+            if command:
+                print(f"[CALLBACK] Executing command for {command_key}: {command}")
+                self.execute_command(command)
+                command_executed = True
+                cv2.putText(processed_image, f"Executing: {command_key}", (10, 150),
+                            cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 255, 0), 2)
+            else:
+                print(f"[CALLBACK] No command found for {command_key}")
+
+        # Handle command timeout
+        if not command_executed:
+            self.check_detection_timeout()
+
+        cv2.imshow('Robot View', processed_image)
+        cv2.waitKey(1)
         
     def load_actions_config(self):
         from ament_index_python.packages import get_package_share_directory

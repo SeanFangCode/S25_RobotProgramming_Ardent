@@ -1,4 +1,6 @@
 from setuptools import setup
+import os
+from glob import glob
 
 package_name = 'aruco_follower'
 
@@ -11,6 +13,8 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         ('share/' + package_name + '/config', ['config/actions.yaml']),
+        (os.path.join('share', package_name, 'srv'), 
+         glob('srv/*.srv')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -22,6 +26,7 @@ setup(
     entry_points={
         'console_scripts':[
             'follower_node = aruco_follower.aruco_follower:main',
+            'distance_server = aruco-follower.distance_server:main', 
             'webcam_pub = webcam.cam_pub:main',
             'webcam_sub = webcam.cam_sub:main'
         ],
