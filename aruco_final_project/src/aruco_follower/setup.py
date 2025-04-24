@@ -28,8 +28,8 @@ setup(
         'console_scripts': [
             'follower_node = aruco_follower.aruco_follower:main',
             'distance_server = aruco_follower.distance_server:main',
-            'webcam_pub = aruco_follower.webcam.cam_pub:main',  # Fixed path
-            'webcam_sub = aruco_follower.webcam.cam_sub:main'   # Fixed path
+            'webcam_pub = aruco_follower.webcam.cam_pub:main',
+            'webcam_sub = aruco_follower.webcam.cam_sub:main'
         ],
     },
 )
