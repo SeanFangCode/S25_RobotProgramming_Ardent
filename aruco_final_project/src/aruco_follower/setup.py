@@ -24,14 +24,14 @@ setup(
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
+        'rosidl_generate_interfaces': [
+            'aruco_follower/srv/ArUcoDistance.srv',
+        ],
         'console_scripts':[
             'follower_node = aruco_follower.aruco_follower:main',
             'distance_server = aruco_follower.distance_server:main', 
             'webcam_pub = webcam.cam_pub:main',
             'webcam_sub = webcam.cam_sub:main'
-        ],
-        'rosidl_generate_interfaces': [
-            'aruco_follower/srv/ArUcoDistance.srv',
         ],
     },
 )
