@@ -124,7 +124,9 @@ class TagDistanceService(Node):
             return response
         
         # Detect ArUco markers
-        corners, ids, _ = self.detector.detectMarkers(cv_image)
+        detection_result = self.detector.detectMarkers(cv_image)
+        corners = detection_result[0]
+        ids = detection_result[1]
         
         # Check if tag ID 0 was detected
         tag_found = False

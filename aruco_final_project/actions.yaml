@@ -53,5 +53,5 @@ settings:
   max_linear_speed: 0.8    # m/s
   max_angular_speed: 1.2   # rad/s
   cmd_vel_topic: "/cmd_vel"
-  tag_family: "36h11"
+  tag_family: "DICT_4X4_1000"
   detection_timeout: 1.0   # seconds before stopping if tag is lost

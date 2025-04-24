@@ -109,7 +109,9 @@ class FollowerNode(Node):
             self.get_logger().error(f'Image conversion error: {str(e)}')
             return
 
-        corners, ids, _ = self.detector.detectMarkers(cv_image)
+        detection_result = self.detector.detectMarkers(cv_image)
+        corners = detection_result[0]
+        ids = detection_result[1]
         print(f"[CALLBACK] detectMarkers → ids: {ids}, number of corners sets: {len(corners) if corners is not None else 0}")
 
         processed_image = cv_image.copy()
