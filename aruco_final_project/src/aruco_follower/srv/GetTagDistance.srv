@@ -1,0 +1,6 @@
+# Request (empty - no parameters needed)
+---
+# Response
+bool success     # Whether the tag was found
+float64 distance # Distance to tag in meters (negative if not found)
+string message   # Status or error message
