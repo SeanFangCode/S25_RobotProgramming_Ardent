@@ -30,5 +30,8 @@ setup(
             'webcam_pub = webcam.cam_pub:main',
             'webcam_sub = webcam.cam_sub:main'
         ],
+        'rosidl_generate_interfaces': [
+            'aruco_follower/srv/ArUcoDistance.srv',
+        ],
     },
 )
