@@ -4,7 +4,7 @@ from rclpy.node import Node
 from sensor_msgs.msg import Image, CameraInfo
 from cv_bridge import CvBridge
 ##from aruco_follower.srv import ArUcoDistance
-from aruco_follower import ArUcoDistance
+from aruco_follower.srv import ArUcoDistance
 import cv2.aruco as aruco
 import numpy as np
 
