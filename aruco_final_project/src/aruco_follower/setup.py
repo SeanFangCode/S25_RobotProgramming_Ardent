@@ -32,6 +32,6 @@ setup(
             'distance_server = aruco_follower.distance_server:main', 
             'webcam_pub = webcam.cam_pub:main',
             'webcam_sub = webcam.cam_sub:main'
-        ],
+        ]
     },
 )
