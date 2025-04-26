@@ -1,0 +1,720 @@
+[0.126s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.126s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=4, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x702c1e00b880>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x702c1e174e50>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x702c1e174e50>>)
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.289s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.289s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/jason/ros2_ws'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.289s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.302s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.303s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extensions ['ignore', 'ignore_ament_install']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extension 'ignore'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extension 'ignore_ament_install'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extensions ['colcon_pkg']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extension 'colcon_pkg'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extensions ['colcon_meta']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extension 'colcon_meta'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extensions ['ros']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extension 'ros'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extensions ['cmake', 'python']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extension 'cmake'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extension 'python'
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extensions ['python_setup_py']
+[0.304s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs) by extension 'python_setup_py'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/gazebo_ros_link_attacher) by extensions ['ignore', 'ignore_ament_install']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/gazebo_ros_link_attacher) by extension 'ignore'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/gazebo_ros_link_attacher) by extension 'ignore_ament_install'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/gazebo_ros_link_attacher) by extensions ['colcon_pkg']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/gazebo_ros_link_attacher) by extension 'colcon_pkg'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/gazebo_ros_link_attacher) by extensions ['colcon_meta']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/gazebo_ros_link_attacher) by extension 'colcon_meta'
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/gazebo_ros_link_attacher) by extensions ['ros']
+[0.305s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/gazebo_ros_link_attacher) by extension 'ros'
+[0.309s] DEBUG:colcon.colcon_core.package_identification:Package 'src/libs/gazebo_ros_link_attacher' with type 'ros.ament_cmake' and name 'gazebo_ros_link_attacher'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extension 'ignore'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extension 'ignore_ament_install'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extensions ['colcon_pkg']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extension 'colcon_pkg'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extensions ['colcon_meta']
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extension 'colcon_meta'
+[0.309s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extension 'ros'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extensions ['cmake', 'python']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extension 'cmake'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extension 'python'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extensions ['python_setup_py']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros) by extension 'python_setup_py'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[0.310s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[0.311s] DEBUG:colcon.colcon_core.package_identification:Package 'src/libs/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_description) by extension 'ignore'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_description) by extension 'ignore_ament_install'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_description) by extensions ['colcon_pkg']
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_description) by extension 'colcon_pkg'
+[0.311s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_description) by extensions ['colcon_meta']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_description) by extension 'colcon_meta'
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_description) by extensions ['ros']
+[0.312s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/realsense2_description) by extension 'ros'
+[0.312s] DEBUG:colcon.colcon_core.package_identification:Package 'src/libs/realsense-ros/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extension 'ignore'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extension 'ignore_ament_install'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extensions ['colcon_pkg']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extension 'colcon_pkg'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extensions ['colcon_meta']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extension 'colcon_meta'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extensions ['ros']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extension 'ros'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extensions ['cmake', 'python']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extension 'cmake'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extension 'python'
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extensions ['python_setup_py']
+[0.313s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense-ros/scripts) by extension 'python_setup_py'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense_gazebo_plugin) by extensions ['ignore', 'ignore_ament_install']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense_gazebo_plugin) by extension 'ignore'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense_gazebo_plugin) by extension 'ignore_ament_install'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense_gazebo_plugin) by extensions ['colcon_pkg']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense_gazebo_plugin) by extension 'colcon_pkg'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense_gazebo_plugin) by extensions ['colcon_meta']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense_gazebo_plugin) by extension 'colcon_meta'
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense_gazebo_plugin) by extensions ['ros']
+[0.314s] Level 1:colcon.colcon_core.package_identification:_identify(src/libs/realsense_gazebo_plugin) by extension 'ros'
+[0.315s] DEBUG:colcon.colcon_core.package_identification:Package 'src/libs/realsense_gazebo_plugin' with type 'ros.catkin' and name 'realsense_gazebo_plugin'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_gazebo) by extension 'ignore'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_gazebo) by extension 'ignore_ament_install'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_gazebo) by extensions ['colcon_pkg']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_gazebo) by extension 'colcon_pkg'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_gazebo) by extensions ['colcon_meta']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_gazebo) by extension 'colcon_meta'
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_gazebo) by extensions ['ros']
+[0.315s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_gazebo) by extension 'ros'
+[0.316s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mbot_gazebo' with type 'ros.ament_python' and name 'mbot_gazebo'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_teleop) by extensions ['ignore', 'ignore_ament_install']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_teleop) by extension 'ignore'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_teleop) by extension 'ignore_ament_install'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_teleop) by extensions ['colcon_pkg']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_teleop) by extension 'colcon_pkg'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_teleop) by extensions ['colcon_meta']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_teleop) by extension 'colcon_meta'
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_teleop) by extensions ['ros']
+[0.316s] Level 1:colcon.colcon_core.package_identification:_identify(src/mbot_teleop) by extension 'ros'
+[0.317s] DEBUG:colcon.colcon_core.package_identification:Package 'src/mbot_teleop' with type 'ros.ament_python' and name 'mbot_teleop'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extensions ['ignore', 'ignore_ament_install']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extension 'ignore'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extension 'ignore_ament_install'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extensions ['colcon_pkg']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extension 'colcon_pkg'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extensions ['colcon_meta']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extension 'colcon_meta'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extensions ['ros']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extension 'ros'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extensions ['cmake', 'python']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extension 'cmake'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extension 'python'
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extensions ['python_setup_py']
+[0.317s] Level 1:colcon.colcon_core.package_identification:_identify(src/models) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extension 'python'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extensions ['python_setup_py']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco) by extension 'python_setup_py'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extensions ['ignore', 'ignore_ament_install']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extension 'ignore'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extension 'ignore_ament_install'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extensions ['colcon_pkg']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extension 'colcon_pkg'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extensions ['colcon_meta']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extension 'colcon_meta'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extensions ['ros']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extension 'ros'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extensions ['cmake', 'python']
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extension 'cmake'
+[0.318s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extension 'ignore'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extension 'ignore_ament_install'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extensions ['colcon_pkg']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extension 'colcon_pkg'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extensions ['colcon_meta']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extension 'colcon_meta'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extensions ['ros']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extension 'ros'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extensions ['cmake', 'python']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extension 'cmake'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extension 'python'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extensions ['python_setup_py']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/scripts) by extension 'python_setup_py'
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extensions ['ignore', 'ignore_ament_install']
+[0.319s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extension 'colcon_pkg'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extensions ['colcon_meta']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extension 'colcon_meta'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extensions ['ros']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extension 'ros'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extensions ['cmake', 'python']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extension 'cmake'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extension 'python'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extensions ['python_setup_py']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/aruco/materials/textures) by extension 'python_setup_py'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extensions ['ignore', 'ignore_ament_install']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extension 'ignore'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extension 'ignore_ament_install'
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extensions ['colcon_pkg']
+[0.320s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extension 'python'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extensions ['python_setup_py']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11) by extension 'python_setup_py'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extensions ['ignore', 'ignore_ament_install']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extension 'ignore'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extension 'ignore_ament_install'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extensions ['colcon_pkg']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extension 'colcon_pkg'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extensions ['colcon_meta']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extension 'colcon_meta'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extensions ['ros']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extension 'ros'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extensions ['cmake', 'python']
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extension 'cmake'
+[0.321s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extension 'python'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extensions ['python_setup_py']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/models/marker_CAR11/meshes) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'colcon_meta'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['ros']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'ros'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['cmake', 'python']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'cmake'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extensions ['python_setup_py']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco) by extension 'python_setup_py'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ignore', 'ignore_ament_install']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ignore_ament_install'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_pkg']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_pkg'
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['colcon_meta']
+[0.322s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'colcon_meta'
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extensions ['ros']
+[0.323s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco) by extension 'ros'
+[0.324s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco' with type 'ros.ament_python' and name 'ros2_aruco'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ignore_ament_install'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_pkg']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_pkg'
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['colcon_meta']
+[0.324s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'colcon_meta'
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extensions ['ros']
+[0.325s] Level 1:colcon.colcon_core.package_identification:_identify(src/ros2_aruco/ros2_aruco_interfaces) by extension 'ros'
+[0.326s] DEBUG:colcon.colcon_core.package_identification:Package 'src/ros2_aruco/ros2_aruco_interfaces' with type 'ros.ament_cmake' and name 'ros2_aruco_interfaces'
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.326s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.371s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.374s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 333 installed packages in /opt/ros/humble
+[0.375s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros_link_attacher' build argument 'cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros_link_attacher' build argument 'cmake_target' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros_link_attacher' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros_link_attacher' build argument 'cmake_clean_cache' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros_link_attacher' build argument 'cmake_clean_first' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros_link_attacher' build argument 'cmake_force_configure' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros_link_attacher' build argument 'ament_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros_link_attacher' build argument 'catkin_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'gazebo_ros_link_attacher' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.418s] DEBUG:colcon.colcon_core.verb:Building package 'gazebo_ros_link_attacher' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jason/ros2_ws/build/gazebo_ros_link_attacher', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jason/ros2_ws/install/gazebo_ros_link_attacher', 'merge_install': False, 'path': '/home/jason/ros2_ws/src/libs/gazebo_ros_link_attacher', 'symlink_install': False, 'test_result_base': None}
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'mbot_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'mbot_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'mbot_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'mbot_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'mbot_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'mbot_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'mbot_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'mbot_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.418s] Level 5:colcon.colcon_core.verb:set package 'mbot_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.418s] DEBUG:colcon.colcon_core.verb:Building package 'mbot_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jason/ros2_ws/build/mbot_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jason/ros2_ws/install/mbot_gazebo', 'merge_install': False, 'path': '/home/jason/ros2_ws/src/mbot_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'mbot_teleop' build argument 'cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'mbot_teleop' build argument 'cmake_target' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'mbot_teleop' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'mbot_teleop' build argument 'cmake_clean_cache' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'mbot_teleop' build argument 'cmake_clean_first' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'mbot_teleop' build argument 'cmake_force_configure' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'mbot_teleop' build argument 'ament_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'mbot_teleop' build argument 'catkin_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'mbot_teleop' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.419s] DEBUG:colcon.colcon_core.verb:Building package 'mbot_teleop' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jason/ros2_ws/build/mbot_teleop', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jason/ros2_ws/install/mbot_teleop', 'merge_install': False, 'path': '/home/jason/ros2_ws/src/mbot_teleop', 'symlink_install': False, 'test_result_base': None}
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.419s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.419s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jason/ros2_ws/build/realsense2_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jason/ros2_ws/install/realsense2_camera_msgs', 'merge_install': False, 'path': '/home/jason/ros2_ws/src/libs/realsense-ros/realsense2_camera_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_target' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_clean_cache' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_clean_first' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'cmake_force_configure' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'ament_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'catkin_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'realsense_gazebo_plugin' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.420s] DEBUG:colcon.colcon_core.verb:Building package 'realsense_gazebo_plugin' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jason/ros2_ws/build/realsense_gazebo_plugin', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jason/ros2_ws/install/realsense_gazebo_plugin', 'merge_install': False, 'path': '/home/jason/ros2_ws/src/libs/realsense_gazebo_plugin', 'symlink_install': False, 'test_result_base': None}
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_cache' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_clean_first' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'cmake_force_configure' from command line to 'False'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'ament_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_cmake_args' from command line to 'None'
+[0.420s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.420s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jason/ros2_ws/build/ros2_aruco', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jason/ros2_ws/install/ros2_aruco', 'merge_install': False, 'path': '/home/jason/ros2_ws/src/ros2_aruco/ros2_aruco', 'symlink_install': False, 'test_result_base': None}
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_cache' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_clean_first' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'ros2_aruco_interfaces' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.421s] DEBUG:colcon.colcon_core.verb:Building package 'ros2_aruco_interfaces' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jason/ros2_ws/build/ros2_aruco_interfaces', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jason/ros2_ws/install/ros2_aruco_interfaces', 'merge_install': False, 'path': '/home/jason/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces', 'symlink_install': False, 'test_result_base': None}
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.421s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.421s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/jason/ros2_ws/build/realsense2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/jason/ros2_ws/install/realsense2_description', 'merge_install': False, 'path': '/home/jason/ros2_ws/src/libs/realsense-ros/realsense2_description', 'symlink_install': False, 'test_result_base': None}
+[0.421s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.423s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.423s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jason/ros2_ws/src/libs/realsense-ros/realsense2_camera_msgs' with build type 'ament_cmake'
+[0.423s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jason/ros2_ws/src/libs/realsense-ros/realsense2_camera_msgs'
+[0.426s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.426s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.426s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.432s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jason/ros2_ws/src/libs/gazebo_ros_link_attacher' with build type 'ament_cmake'
+[0.433s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jason/ros2_ws/src/libs/gazebo_ros_link_attacher'
+[0.433s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.433s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.439s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jason/ros2_ws/src/mbot_gazebo' with build type 'ament_python'
+[0.439s] Level 1:colcon.colcon_core.shell:create_environment_hook('mbot_gazebo', 'ament_prefix_path')
+[0.440s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/hook/ament_prefix_path.ps1'
+[0.443s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/hook/ament_prefix_path.dsv'
+[0.444s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/hook/ament_prefix_path.sh'
+[0.445s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.445s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.451s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jason/ros2_ws/src/mbot_teleop' with build type 'ament_python'
+[0.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('mbot_teleop', 'ament_prefix_path')
+[0.451s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/hook/ament_prefix_path.ps1'
+[0.452s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/hook/ament_prefix_path.dsv'
+[0.453s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/hook/ament_prefix_path.sh'
+[0.454s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.454s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.464s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense2_camera_msgs -- -j4 -l4
+[0.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/gazebo_ros_link_attacher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jason/ros2_ws/build/gazebo_ros_link_attacher -- -j4 -l4
+[1.150s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jason/ros2_ws/src/mbot_gazebo'
+[1.151s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.151s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.629s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jason/ros2_ws/src/mbot_teleop'
+[1.630s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.630s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.640s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense2_camera_msgs -- -j4 -l4
+[1.656s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense2_camera_msgs
+[1.663s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/gazebo_ros_link_attacher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jason/ros2_ws/build/gazebo_ros_link_attacher -- -j4 -l4
+[1.664s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/gazebo_ros_link_attacher': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jason/ros2_ws/build/gazebo_ros_link_attacher
+[1.809s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[1.813s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs' for CMake module files
+[1.814s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense2_camera_msgs
+[1.818s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs' for CMake config files
+[1.818s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[1.819s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[1.824s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[1.828s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[1.829s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/lib'
+[1.830s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[1.830s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[1.831s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[1.831s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/bin'
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[1.832s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/bin'
+[1.833s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[1.834s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[1.834s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[1.835s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[1.839s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[1.840s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[1.843s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[1.843s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs' for CMake module files
+[1.844s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs' for CMake config files
+[1.846s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[1.846s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[1.848s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[1.849s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[1.849s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/lib'
+[1.850s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[1.850s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[1.851s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[1.857s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/bin'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/lib/python3.10/site-packages'
+[1.858s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_camera_msgs/bin'
+[1.859s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[1.860s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[1.861s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[1.862s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[1.863s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[1.863s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[1.864s] INFO:colcon.colcon_ros.task.catkin.build:Building ROS package in '/home/jason/ros2_ws/src/libs/realsense_gazebo_plugin' with build type 'catkin'
+[1.864s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jason/ros2_ws/src/libs/realsense_gazebo_plugin'
+[1.864s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.864s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.873s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_ros_link_attacher)
+[1.874s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher' for CMake module files
+[1.874s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher' for CMake config files
+[1.875s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/gazebo_ros_link_attacher' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jason/ros2_ws/build/gazebo_ros_link_attacher
+[1.876s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_ros_link_attacher', 'cmake_prefix_path')
+[1.879s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/cmake_prefix_path.ps1'
+[1.880s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/cmake_prefix_path.dsv'
+[1.883s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/cmake_prefix_path.sh'
+[1.885s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/lib'
+[1.885s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_ros_link_attacher', 'ld_library_path_lib')
+[1.886s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/ld_library_path_lib.ps1'
+[1.887s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/ld_library_path_lib.dsv'
+[1.889s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/ld_library_path_lib.sh'
+[1.890s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/bin'
+[1.890s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/lib/pkgconfig/gazebo_ros_link_attacher.pc'
+[1.890s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/lib/python3.10/site-packages'
+[1.890s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/bin'
+[1.891s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.ps1'
+[1.892s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.dsv'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.sh'
+[1.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.bash'
+[1.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.zsh'
+[1.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/colcon-core/packages/gazebo_ros_link_attacher)
+[1.903s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(gazebo_ros_link_attacher)
+[1.903s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher' for CMake module files
+[1.908s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher' for CMake config files
+[1.910s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_ros_link_attacher', 'cmake_prefix_path')
+[1.912s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/cmake_prefix_path.ps1'
+[1.912s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/cmake_prefix_path.dsv'
+[1.913s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/cmake_prefix_path.sh'
+[1.914s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/lib'
+[1.914s] Level 1:colcon.colcon_core.shell:create_environment_hook('gazebo_ros_link_attacher', 'ld_library_path_lib')
+[1.914s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/ld_library_path_lib.ps1'
+[1.915s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/ld_library_path_lib.dsv'
+[1.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/hook/ld_library_path_lib.sh'
+[1.916s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/bin'
+[1.917s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/lib/pkgconfig/gazebo_ros_link_attacher.pc'
+[1.918s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/lib/python3.10/site-packages'
+[1.918s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/bin'
+[1.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.ps1'
+[1.919s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.dsv'
+[1.921s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.sh'
+[1.922s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.bash'
+[1.923s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/gazebo_ros_link_attacher/package.zsh'
+[1.923s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/gazebo_ros_link_attacher/share/colcon-core/packages/gazebo_ros_link_attacher)
+[1.935s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense_gazebo_plugin -- -j4 -l4
+[1.938s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/home/jason/ros2_ws/src/ros2_aruco/ros2_aruco' with build type 'ament_python'
+[1.939s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'ament_prefix_path')
+[1.939s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.ps1'
+[1.941s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.dsv'
+[1.941s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/ament_prefix_path.sh'
+[1.944s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.944s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.405s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/home/jason/ros2_ws/src/ros2_aruco/ros2_aruco'
+[2.405s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.406s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.427s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/src/mbot_gazebo': PYTHONPATH=/home/jason/ros2_ws/build/mbot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/mbot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mbot_gazebo build --build-base /home/jason/ros2_ws/build/mbot_gazebo/build install --record /home/jason/ros2_ws/build/mbot_gazebo/install.log --single-version-externally-managed install_data
+[2.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/src/mbot_teleop': PYTHONPATH=/home/jason/ros2_ws/build/mbot_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mbot_teleop build --build-base /home/jason/ros2_ws/build/mbot_teleop/build install --record /home/jason/ros2_ws/build/mbot_teleop/install.log --single-version-externally-managed install_data
+[2.439s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense_gazebo_plugin -- -j4 -l4
+[2.440s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense_gazebo_plugin
+[2.484s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'ros_package_path')
+[2.484s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ros_package_path.ps1'
+[2.488s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ros_package_path.dsv'
+[2.493s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ros_package_path.sh'
+[2.494s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'pkg_config_path')
+[2.495s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense_gazebo_plugin
+[2.496s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path.ps1'
+[2.497s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path.dsv'
+[2.498s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path.sh'
+[2.501s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'pkg_config_path_multiarch')
+[2.501s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path_multiarch.ps1'
+[2.502s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path_multiarch.dsv'
+[2.503s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/pkg_config_path_multiarch.sh'
+[2.505s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense_gazebo_plugin)
+[2.505s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense_gazebo_plugin' for CMake module files
+[2.506s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense_gazebo_plugin' for CMake config files
+[2.507s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'cmake_prefix_path')
+[2.507s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.ps1'
+[2.508s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.dsv'
+[2.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/cmake_prefix_path.sh'
+[2.509s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense_gazebo_plugin/lib'
+[2.509s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense_gazebo_plugin', 'ld_library_path_lib')
+[2.509s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.ps1'
+[2.510s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.dsv'
+[2.510s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/hook/ld_library_path_lib.sh'
+[2.511s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense_gazebo_plugin/bin'
+[2.511s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense_gazebo_plugin/lib/pkgconfig/realsense_gazebo_plugin.pc'
+[2.512s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense_gazebo_plugin/lib/python3.10/site-packages'
+[2.512s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense_gazebo_plugin/bin'
+[2.512s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.ps1'
+[2.513s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.dsv'
+[2.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.sh'
+[2.514s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.bash'
+[2.515s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/realsense_gazebo_plugin/package.zsh'
+[2.515s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/realsense_gazebo_plugin/share/colcon-core/packages/realsense_gazebo_plugin)
+[2.516s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jason/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces' with build type 'ament_cmake'
+[2.517s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jason/ros2_ws/src/ros2_aruco/ros2_aruco_interfaces'
+[2.517s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.517s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.535s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jason/ros2_ws/build/ros2_aruco_interfaces -- -j4 -l4
+[3.071s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_gazebo' for CMake module files
+[3.071s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_gazebo' for CMake config files
+[3.072s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_gazebo/lib'
+[3.073s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_gazebo/bin'
+[3.074s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_gazebo/lib/pkgconfig/mbot_gazebo.pc'
+[3.075s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_gazebo/lib/python3.10/site-packages'
+[3.075s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/src/mbot_gazebo' returned '0': PYTHONPATH=/home/jason/ros2_ws/build/mbot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/mbot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mbot_gazebo build --build-base /home/jason/ros2_ws/build/mbot_gazebo/build install --record /home/jason/ros2_ws/build/mbot_gazebo/install.log --single-version-externally-managed install_data
+[3.076s] Level 1:colcon.colcon_core.shell:create_environment_hook('mbot_gazebo', 'pythonpath')
+[3.076s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/hook/pythonpath.ps1'
+[3.078s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/hook/pythonpath.dsv'
+[3.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/hook/pythonpath.sh'
+[3.087s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_gazebo/bin'
+[3.087s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mbot_gazebo)
+[3.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/package.ps1'
+[3.089s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/package.dsv'
+[3.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/package.sh'
+[3.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/package.bash'
+[3.091s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/package.zsh'
+[3.092s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/mbot_gazebo/share/colcon-core/packages/mbot_gazebo)
+[3.093s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/jason/ros2_ws/src/libs/realsense-ros/realsense2_description' with build type 'ament_cmake'
+[3.094s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/jason/ros2_ws/src/libs/realsense-ros/realsense2_description'
+[3.094s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.094s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.119s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense2_description -- -j4 -l4
+[3.193s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_teleop' for CMake module files
+[3.195s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/src/mbot_teleop' returned '0': PYTHONPATH=/home/jason/ros2_ws/build/mbot_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mbot_teleop build --build-base /home/jason/ros2_ws/build/mbot_teleop/build install --record /home/jason/ros2_ws/build/mbot_teleop/install.log --single-version-externally-managed install_data
+[3.196s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_teleop' for CMake config files
+[3.196s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_teleop/lib'
+[3.196s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_teleop/bin'
+[3.196s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_teleop/lib/pkgconfig/mbot_teleop.pc'
+[3.197s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages'
+[3.197s] Level 1:colcon.colcon_core.shell:create_environment_hook('mbot_teleop', 'pythonpath')
+[3.197s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/hook/pythonpath.ps1'
+[3.202s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/hook/pythonpath.dsv'
+[3.207s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/hook/pythonpath.sh'
+[3.212s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/mbot_teleop/bin'
+[3.215s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(mbot_teleop)
+[3.215s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/package.ps1'
+[3.221s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/package.dsv'
+[3.229s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/package.sh'
+[3.230s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/package.bash'
+[3.234s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop/package.zsh'
+[3.240s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/mbot_teleop/share/colcon-core/packages/mbot_teleop)
+[3.261s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense2_description -- -j4 -l4
+[3.262s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense2_description
+[3.289s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[3.289s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description' for CMake module files
+[3.290s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description' for CMake config files
+[3.291s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[3.291s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[3.292s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[3.293s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense2_description
+[3.294s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[3.294s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description/bin'
+[3.294s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[3.295s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description/lib/python3.10/site-packages'
+[3.295s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description/bin'
+[3.295s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[3.297s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[3.298s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[3.299s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[3.301s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[3.302s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[3.303s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[3.304s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description' for CMake module files
+[3.304s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description' for CMake config files
+[3.304s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[3.305s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[3.306s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[3.307s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[3.308s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description/bin'
+[3.308s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[3.308s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description/lib/python3.10/site-packages'
+[3.308s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/realsense2_description/bin'
+[3.309s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.ps1'
+[3.310s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.dsv'
+[3.311s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.sh'
+[3.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.bash'
+[3.312s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.zsh'
+[3.313s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[3.352s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/src/ros2_aruco/ros2_aruco': PYTHONPATH=/home/jason/ros2_ws/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/jason/ros2_ws/build/ros2_aruco/build install --record /home/jason/ros2_ws/build/ros2_aruco/install.log --single-version-externally-managed install_data
+[3.467s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/jason/ros2_ws/build/ros2_aruco_interfaces -- -j4 -l4
+[3.471s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/jason/ros2_ws/build/ros2_aruco_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jason/ros2_ws/build/ros2_aruco_interfaces
+[3.558s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[3.558s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces' for CMake module files
+[3.559s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/build/ros2_aruco_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/jason/ros2_ws/build/ros2_aruco_interfaces
+[3.560s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces' for CMake config files
+[3.561s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[3.561s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[3.562s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[3.563s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[3.563s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/lib'
+[3.564s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[3.564s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[3.565s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[3.566s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[3.567s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/bin'
+[3.567s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[3.569s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/lib/python3.10/site-packages'
+[3.569s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/bin'
+[3.570s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[3.572s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[3.573s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[3.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[3.574s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[3.575s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[3.575s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco_interfaces)
+[3.576s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces' for CMake module files
+[3.576s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces' for CMake config files
+[3.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'cmake_prefix_path')
+[3.577s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.ps1'
+[3.577s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.dsv'
+[3.578s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/cmake_prefix_path.sh'
+[3.579s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/lib'
+[3.579s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco_interfaces', 'ld_library_path_lib')
+[3.579s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.ps1'
+[3.581s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.dsv'
+[3.582s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/hook/ld_library_path_lib.sh'
+[3.582s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/bin'
+[3.582s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/lib/pkgconfig/ros2_aruco_interfaces.pc'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/lib/python3.10/site-packages'
+[3.583s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco_interfaces/bin'
+[3.583s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.ps1'
+[3.584s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.dsv'
+[3.584s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.sh'
+[3.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.bash'
+[3.585s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/ros2_aruco_interfaces/package.zsh'
+[3.586s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/ros2_aruco_interfaces/share/colcon-core/packages/ros2_aruco_interfaces)
+[3.713s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco' for CMake module files
+[3.714s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/jason/ros2_ws/src/ros2_aruco/ros2_aruco' returned '0': PYTHONPATH=/home/jason/ros2_ws/build/ros2_aruco/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/ros2_aruco/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../../build/ros2_aruco build --build-base /home/jason/ros2_ws/build/ros2_aruco/build install --record /home/jason/ros2_ws/build/ros2_aruco/install.log --single-version-externally-managed install_data
+[3.714s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco' for CMake config files
+[3.715s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco/lib'
+[3.715s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco/bin'
+[3.715s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco/lib/pkgconfig/ros2_aruco.pc'
+[3.715s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco/lib/python3.10/site-packages'
+[3.715s] Level 1:colcon.colcon_core.shell:create_environment_hook('ros2_aruco', 'pythonpath')
+[3.716s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.ps1'
+[3.717s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.dsv'
+[3.717s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/hook/pythonpath.sh'
+[3.718s] Level 1:colcon.colcon_core.environment:checking '/home/jason/ros2_ws/install/ros2_aruco/bin'
+[3.718s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(ros2_aruco)
+[3.718s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.ps1'
+[3.719s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.dsv'
+[3.720s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.sh'
+[3.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.bash'
+[3.721s] INFO:colcon.colcon_core.shell:Creating package script '/home/jason/ros2_ws/install/ros2_aruco/share/ros2_aruco/package.zsh'
+[3.722s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/jason/ros2_ws/install/ros2_aruco/share/colcon-core/packages/ros2_aruco)
+[3.722s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[3.723s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[3.723s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[3.723s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[3.734s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[3.734s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[3.734s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[3.760s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[3.761s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jason/ros2_ws/install/local_setup.ps1'
+[3.764s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jason/ros2_ws/install/_local_setup_util_ps1.py'
+[3.766s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jason/ros2_ws/install/setup.ps1'
+[3.768s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jason/ros2_ws/install/local_setup.sh'
+[3.769s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/jason/ros2_ws/install/_local_setup_util_sh.py'
+[3.770s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jason/ros2_ws/install/setup.sh'
+[3.771s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jason/ros2_ws/install/local_setup.bash'
+[3.772s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jason/ros2_ws/install/setup.bash'
+[3.773s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/jason/ros2_ws/install/local_setup.zsh'
+[3.774s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/jason/ros2_ws/install/setup.zsh'

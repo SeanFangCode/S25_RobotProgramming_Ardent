@@ -1,0 +1,48 @@
+[0.988s] Invoking command in '/home/jason/ros2_ws/src/mbot_gazebo': PYTHONPATH=/home/jason/ros2_ws/build/mbot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/mbot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mbot_gazebo build --build-base /home/jason/ros2_ws/build/mbot_gazebo/build install --record /home/jason/ros2_ws/build/mbot_gazebo/install.log --single-version-externally-managed install_data
+[1.253s] running egg_info
+[1.253s] creating ../../build/mbot_gazebo/mbot_gazebo.egg-info
+[1.253s] writing ../../build/mbot_gazebo/mbot_gazebo.egg-info/PKG-INFO
+[1.253s] writing dependency_links to ../../build/mbot_gazebo/mbot_gazebo.egg-info/dependency_links.txt
+[1.253s] writing entry points to ../../build/mbot_gazebo/mbot_gazebo.egg-info/entry_points.txt
+[1.254s] writing requirements to ../../build/mbot_gazebo/mbot_gazebo.egg-info/requires.txt
+[1.254s] writing top-level names to ../../build/mbot_gazebo/mbot_gazebo.egg-info/top_level.txt
+[1.254s] writing manifest file '../../build/mbot_gazebo/mbot_gazebo.egg-info/SOURCES.txt'
+[1.255s] reading manifest file '../../build/mbot_gazebo/mbot_gazebo.egg-info/SOURCES.txt'
+[1.256s] writing manifest file '../../build/mbot_gazebo/mbot_gazebo.egg-info/SOURCES.txt'
+[1.256s] running build
+[1.256s] running build_py
+[1.256s] creating /home/jason/ros2_ws/build/mbot_gazebo/build
+[1.256s] creating /home/jason/ros2_ws/build/mbot_gazebo/build/lib
+[1.257s] creating /home/jason/ros2_ws/build/mbot_gazebo/build/lib/mbot_gazebo
+[1.257s] copying mbot_gazebo/__init__.py -> /home/jason/ros2_ws/build/mbot_gazebo/build/lib/mbot_gazebo
+[1.257s] running install
+[1.257s] running install_lib
+[1.258s] creating /home/jason/ros2_ws/install/mbot_gazebo/lib/python3.10/site-packages/mbot_gazebo
+[1.258s] copying /home/jason/ros2_ws/build/mbot_gazebo/build/lib/mbot_gazebo/__init__.py -> /home/jason/ros2_ws/install/mbot_gazebo/lib/python3.10/site-packages/mbot_gazebo
+[1.258s] byte-compiling /home/jason/ros2_ws/install/mbot_gazebo/lib/python3.10/site-packages/mbot_gazebo/__init__.py to __init__.cpython-310.pyc
+[1.258s] running install_data
+[1.259s] creating /home/jason/ros2_ws/install/mbot_gazebo/share/ament_index
+[1.259s] creating /home/jason/ros2_ws/install/mbot_gazebo/share/ament_index/resource_index
+[1.259s] creating /home/jason/ros2_ws/install/mbot_gazebo/share/ament_index/resource_index/packages
+[1.259s] copying resource/mbot_gazebo -> /home/jason/ros2_ws/install/mbot_gazebo/share/ament_index/resource_index/packages
+[1.259s] copying package.xml -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo
+[1.259s] creating /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/launch
+[1.260s] copying launch/mbot.launch.py -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/launch
+[1.260s] copying launch/sim_bringup.launch.py -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/launch
+[1.260s] creating /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/urdf
+[1.260s] copying urdf/mbot_gazebo.xacro -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/urdf
+[1.260s] copying urdf/mbot_base_gazebo.xacro -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/urdf
+[1.261s] creating /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/meshes
+[1.261s] copying meshes/kinect.tga -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/meshes
+[1.261s] copying meshes/kinect.dae -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/meshes
+[1.261s] copying meshes/kinect.jpg -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/meshes
+[1.261s] creating /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/urdf/sensors
+[1.261s] creating /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/worlds
+[1.261s] copying worlds/empty.world -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/worlds
+[1.262s] creating /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/rviz
+[1.262s] copying rviz/urdf_gazebo_config.rviz -> /home/jason/ros2_ws/install/mbot_gazebo/share/mbot_gazebo/rviz
+[1.262s] running install_egg_info
+[1.263s] Copying ../../build/mbot_gazebo/mbot_gazebo.egg-info to /home/jason/ros2_ws/install/mbot_gazebo/lib/python3.10/site-packages/mbot_gazebo-0.0.0-py3.10.egg-info
+[1.264s] running install_scripts
+[1.282s] writing list of installed files to '/home/jason/ros2_ws/build/mbot_gazebo/install.log'
+[1.308s] Invoked command in '/home/jason/ros2_ws/src/mbot_gazebo' returned '0': PYTHONPATH=/home/jason/ros2_ws/build/mbot_gazebo/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/mbot_gazebo/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mbot_gazebo build --build-base /home/jason/ros2_ws/build/mbot_gazebo/build install --record /home/jason/ros2_ws/build/mbot_gazebo/install.log --single-version-externally-managed install_data

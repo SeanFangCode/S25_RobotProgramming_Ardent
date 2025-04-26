@@ -1,0 +1,6 @@
+{
+  "package_name": "gazebo_ros_link_attacher",
+  "non_idl_tuples": [
+    "/home/jason/ros2_ws/src/libs/gazebo_ros_link_attacher:srv/Attach.srv"
+  ]
+}

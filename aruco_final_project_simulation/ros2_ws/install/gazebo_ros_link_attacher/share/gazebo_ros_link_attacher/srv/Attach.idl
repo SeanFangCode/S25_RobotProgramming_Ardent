@@ -1,0 +1,21 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from gazebo_ros_link_attacher/srv/Attach.srv
+// generated code does not contain a copyright notice
+
+
+module gazebo_ros_link_attacher {
+  module srv {
+    struct Attach_Request {
+      string model_name_1;
+
+      string link_name_1;
+
+      string model_name_2;
+
+      string link_name_2;
+    };
+    struct Attach_Response {
+      boolean ok;
+    };
+  };
+};

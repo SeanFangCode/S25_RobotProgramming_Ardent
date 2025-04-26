@@ -1,0 +1,6 @@
+Invoking command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin': /usr/bin/cmake /home/jason/ros2_ws/src/libs/realsense_gazebo_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jason/ros2_ws/install/realsense_gazebo_plugin
+Invoked command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake /home/jason/ros2_ws/src/libs/realsense_gazebo_plugin -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCMAKE_INSTALL_PREFIX=/home/jason/ros2_ws/install/realsense_gazebo_plugin
+Invoking command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense_gazebo_plugin -- -j4 -l4
+Invoked command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense_gazebo_plugin -- -j4 -l4
+Invoking command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense_gazebo_plugin
+Invoked command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense_gazebo_plugin

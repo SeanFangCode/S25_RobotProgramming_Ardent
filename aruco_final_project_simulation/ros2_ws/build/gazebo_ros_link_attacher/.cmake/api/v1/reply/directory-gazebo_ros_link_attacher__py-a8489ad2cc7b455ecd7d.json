@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "gazebo_ros_link_attacher__py",
+		"source" : "/home/jason/ros2_ws/build/gazebo_ros_link_attacher/gazebo_ros_link_attacher__py"
+	}
+}

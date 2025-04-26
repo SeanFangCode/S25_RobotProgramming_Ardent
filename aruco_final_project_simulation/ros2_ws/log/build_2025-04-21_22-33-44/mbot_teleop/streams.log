@@ -1,0 +1,35 @@
+[0.985s] Invoking command in '/home/jason/ros2_ws/src/mbot_teleop': PYTHONPATH=/home/jason/ros2_ws/build/mbot_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mbot_teleop build --build-base /home/jason/ros2_ws/build/mbot_teleop/build install --record /home/jason/ros2_ws/build/mbot_teleop/install.log --single-version-externally-managed install_data
+[1.282s] running egg_info
+[1.282s] creating ../../build/mbot_teleop/mbot_teleop.egg-info
+[1.282s] writing ../../build/mbot_teleop/mbot_teleop.egg-info/PKG-INFO
+[1.284s] writing dependency_links to ../../build/mbot_teleop/mbot_teleop.egg-info/dependency_links.txt
+[1.284s] writing entry points to ../../build/mbot_teleop/mbot_teleop.egg-info/entry_points.txt
+[1.284s] writing requirements to ../../build/mbot_teleop/mbot_teleop.egg-info/requires.txt
+[1.284s] writing top-level names to ../../build/mbot_teleop/mbot_teleop.egg-info/top_level.txt
+[1.284s] writing manifest file '../../build/mbot_teleop/mbot_teleop.egg-info/SOURCES.txt'
+[1.285s] package init file 'mbot_teleop/__init__.py' not found (or not a regular file)
+[1.285s] reading manifest file '../../build/mbot_teleop/mbot_teleop.egg-info/SOURCES.txt'
+[1.285s] writing manifest file '../../build/mbot_teleop/mbot_teleop.egg-info/SOURCES.txt'
+[1.285s] running build
+[1.285s] running build_py
+[1.285s] creating /home/jason/ros2_ws/build/mbot_teleop/build
+[1.285s] creating /home/jason/ros2_ws/build/mbot_teleop/build/lib
+[1.285s] creating /home/jason/ros2_ws/build/mbot_teleop/build/lib/mbot_teleop
+[1.285s] copying mbot_teleop/mbot_teleop.py -> /home/jason/ros2_ws/build/mbot_teleop/build/lib/mbot_teleop
+[1.285s] running install
+[1.285s] running install_lib
+[1.285s] creating /home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages/mbot_teleop
+[1.285s] copying /home/jason/ros2_ws/build/mbot_teleop/build/lib/mbot_teleop/mbot_teleop.py -> /home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages/mbot_teleop
+[1.286s] byte-compiling /home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages/mbot_teleop/mbot_teleop.py to mbot_teleop.cpython-310.pyc
+[1.291s] running install_data
+[1.292s] creating /home/jason/ros2_ws/install/mbot_teleop/share/ament_index
+[1.292s] creating /home/jason/ros2_ws/install/mbot_teleop/share/ament_index/resource_index
+[1.292s] creating /home/jason/ros2_ws/install/mbot_teleop/share/ament_index/resource_index/packages
+[1.292s] copying resource/mbot_teleop -> /home/jason/ros2_ws/install/mbot_teleop/share/ament_index/resource_index/packages
+[1.292s] copying package.xml -> /home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop
+[1.292s] running install_egg_info
+[1.292s] Copying ../../build/mbot_teleop/mbot_teleop.egg-info to /home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages/mbot_teleop-0.0.0-py3.10.egg-info
+[1.293s] running install_scripts
+[1.329s] Installing mbot_teleop script to /home/jason/ros2_ws/install/mbot_teleop/lib/mbot_teleop
+[1.329s] writing list of installed files to '/home/jason/ros2_ws/build/mbot_teleop/install.log'
+[1.358s] Invoked command in '/home/jason/ros2_ws/src/mbot_teleop' returned '0': PYTHONPATH=/home/jason/ros2_ws/build/mbot_teleop/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mbot_teleop build --build-base /home/jason/ros2_ws/build/mbot_teleop/build install --record /home/jason/ros2_ws/build/mbot_teleop/install.log --single-version-externally-managed install_data

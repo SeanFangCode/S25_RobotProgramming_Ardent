@@ -1,0 +1,8 @@
+setup.py
+gazebo_ros_link_attacher/__init__.py
+gazebo_ros_link_attacher.egg-info/PKG-INFO
+gazebo_ros_link_attacher.egg-info/SOURCES.txt
+gazebo_ros_link_attacher.egg-info/dependency_links.txt
+gazebo_ros_link_attacher.egg-info/top_level.txt
+gazebo_ros_link_attacher/srv/__init__.py
+gazebo_ros_link_attacher/srv/_attach.py

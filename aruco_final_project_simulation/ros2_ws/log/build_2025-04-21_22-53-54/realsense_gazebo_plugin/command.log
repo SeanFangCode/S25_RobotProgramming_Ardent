@@ -1,0 +1,4 @@
+Invoking command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense_gazebo_plugin -- -j4 -l4
+Invoked command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense_gazebo_plugin -- -j4 -l4
+Invoking command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin': /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense_gazebo_plugin
+Invoked command in '/home/jason/ros2_ws/build/realsense_gazebo_plugin' returned '0': /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense_gazebo_plugin

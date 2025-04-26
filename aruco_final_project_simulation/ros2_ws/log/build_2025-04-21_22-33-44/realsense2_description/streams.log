@@ -1,0 +1,70 @@
+[0.018s] Invoking command in '/home/jason/ros2_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/jason/ros2_ws/src/libs/realsense-ros/realsense2_description -DCMAKE_INSTALL_PREFIX=/home/jason/ros2_ws/install/realsense2_description
+[0.094s] -- The C compiler identification is GNU 11.4.0
+[0.172s] -- The CXX compiler identification is GNU 11.4.0
+[0.187s] -- Detecting C compiler ABI info
+[0.272s] -- Detecting C compiler ABI info - done
+[0.281s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.281s] -- Detecting C compile features
+[0.281s] -- Detecting C compile features - done
+[0.282s] -- Detecting CXX compiler ABI info
+[0.373s] -- Detecting CXX compiler ABI info - done
+[0.377s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.377s] -- Detecting CXX compile features
+[0.378s] -- Detecting CXX compile features - done
+[0.421s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.596s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.794s] -- Configuring done
+[0.800s] -- Generating done
+[0.800s] -- Build files have been written to: /home/jason/ros2_ws/build/realsense2_description
+[0.803s] Invoked command in '/home/jason/ros2_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake /home/jason/ros2_ws/src/libs/realsense-ros/realsense2_description -DCMAKE_INSTALL_PREFIX=/home/jason/ros2_ws/install/realsense2_description
+[0.804s] Invoking command in '/home/jason/ros2_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense2_description -- -j4 -l4
+[0.857s] Invoked command in '/home/jason/ros2_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/jason/ros2_ws/build/realsense2_description -- -j4 -l4
+[0.857s] Invoking command in '/home/jason/ros2_ws/build/realsense2_description': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense2_description
+[0.868s] -- Install configuration: ""
+[0.868s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/launch
+[0.868s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/launch/view_model.launch.py
+[0.868s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/launch/launch_utils.py
+[0.869s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/launch/gazebo.launch.py
+[0.869s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/meshes
+[0.869s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug_collision.stl
+[0.870s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d415.stl
+[0.949s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d435.dae
+[1.028s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/plug.stl
+[1.029s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/l515.dae
+[1.250s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/meshes/d455.stl
+[1.271s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/rviz
+[1.272s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/rviz/urdf.rviz
+[1.272s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf
+[1.272s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d455.urdf.xacro
+[1.275s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d415.urdf.xacro
+[1.275s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d455_camera.urdf.xacro
+[1.275s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_materials.urdf.xacro
+[1.276s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435.gazebo.xacro
+[1.276s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d415_camera.urdf.xacro
+[1.277s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435i_camera.urdf.xacro
+[1.277s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r430_camera.urdf.xacro
+[1.278s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i.urdf.xacro
+[1.278s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_usb_plug.urdf.xacro
+[1.279s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_r410_camera.urdf.xacro
+[1.279s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435.urdf.xacro
+[1.279s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_camera.urdf.xacro
+[1.280s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r410.urdf.xacro
+[1.280s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_d435i_imu_modules.urdf.xacro
+[1.282s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/test_d435_multiple_cameras.urdf.xacro
+[1.282s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/urdf/_r430.urdf.xacro
+[1.283s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/ament_index/resource_index/package_run_dependencies/realsense2_description
+[1.283s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/ament_index/resource_index/parent_prefix_path/realsense2_description
+[1.283s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.sh
+[1.284s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/environment/ament_prefix_path.dsv
+[1.284s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.sh
+[1.284s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/environment/path.dsv
+[1.284s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.bash
+[1.285s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.sh
+[1.285s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.zsh
+[1.285s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/local_setup.dsv
+[1.286s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.dsv
+[1.286s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/ament_index/resource_index/packages/realsense2_description
+[1.286s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig.cmake
+[1.287s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/cmake/realsense2_descriptionConfig-version.cmake
+[1.288s] -- Installing: /home/jason/ros2_ws/install/realsense2_description/share/realsense2_description/package.xml
+[1.297s] Invoked command in '/home/jason/ros2_ws/build/realsense2_description' returned '0': AMENT_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs:/opt/ros/humble LD_LIBRARY_PATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/jason/ros2_ws/install/realsense2_camera_msgs/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/jason/ros2_ws/build/realsense2_description

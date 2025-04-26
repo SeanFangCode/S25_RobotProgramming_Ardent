@@ -1,0 +1,3 @@
+[console_scripts]
+mbot_teleop = mbot_teleop.mbot_teleop:main
+

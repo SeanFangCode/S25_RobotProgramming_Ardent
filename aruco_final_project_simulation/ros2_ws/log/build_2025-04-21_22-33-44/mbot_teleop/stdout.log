@@ -1,0 +1,32 @@
+running egg_info
+creating ../../build/mbot_teleop/mbot_teleop.egg-info
+writing ../../build/mbot_teleop/mbot_teleop.egg-info/PKG-INFO
+writing dependency_links to ../../build/mbot_teleop/mbot_teleop.egg-info/dependency_links.txt
+writing entry points to ../../build/mbot_teleop/mbot_teleop.egg-info/entry_points.txt
+writing requirements to ../../build/mbot_teleop/mbot_teleop.egg-info/requires.txt
+writing top-level names to ../../build/mbot_teleop/mbot_teleop.egg-info/top_level.txt
+writing manifest file '../../build/mbot_teleop/mbot_teleop.egg-info/SOURCES.txt'
+reading manifest file '../../build/mbot_teleop/mbot_teleop.egg-info/SOURCES.txt'
+writing manifest file '../../build/mbot_teleop/mbot_teleop.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jason/ros2_ws/build/mbot_teleop/build
+creating /home/jason/ros2_ws/build/mbot_teleop/build/lib
+creating /home/jason/ros2_ws/build/mbot_teleop/build/lib/mbot_teleop
+copying mbot_teleop/mbot_teleop.py -> /home/jason/ros2_ws/build/mbot_teleop/build/lib/mbot_teleop
+running install
+running install_lib
+creating /home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages/mbot_teleop
+copying /home/jason/ros2_ws/build/mbot_teleop/build/lib/mbot_teleop/mbot_teleop.py -> /home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages/mbot_teleop
+byte-compiling /home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages/mbot_teleop/mbot_teleop.py to mbot_teleop.cpython-310.pyc
+running install_data
+creating /home/jason/ros2_ws/install/mbot_teleop/share/ament_index
+creating /home/jason/ros2_ws/install/mbot_teleop/share/ament_index/resource_index
+creating /home/jason/ros2_ws/install/mbot_teleop/share/ament_index/resource_index/packages
+copying resource/mbot_teleop -> /home/jason/ros2_ws/install/mbot_teleop/share/ament_index/resource_index/packages
+copying package.xml -> /home/jason/ros2_ws/install/mbot_teleop/share/mbot_teleop
+running install_egg_info
+Copying ../../build/mbot_teleop/mbot_teleop.egg-info to /home/jason/ros2_ws/install/mbot_teleop/lib/python3.10/site-packages/mbot_teleop-0.0.0-py3.10.egg-info
+running install_scripts
+Installing mbot_teleop script to /home/jason/ros2_ws/install/mbot_teleop/lib/mbot_teleop
+writing list of installed files to '/home/jason/ros2_ws/build/mbot_teleop/install.log'

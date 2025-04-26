@@ -1,0 +1,79 @@
+{
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_custom_target"
+		],
+		"files" : 
+		[
+			"/home/jason/ros2_ws/build/gazebo_ros_link_attacher/gazebo_ros_link_attacher__py/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 34,
+				"parent" : 0
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"id" : "gazebo_ros_link_attacher::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "gazebo_ros_link_attacher__py::@e7c5eb4fd08da42ec798",
+	"name" : "gazebo_ros_link_attacher__py",
+	"paths" : 
+	{
+		"build" : "gazebo_ros_link_attacher__py",
+		"source" : "/home/jason/ros2_ws/build/gazebo_ros_link_attacher/gazebo_ros_link_attacher__py"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		},
+		{
+			"name" : "CMake Rules",
+			"sourceIndexes" : 
+			[
+				1,
+				2
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"isGenerated" : true,
+			"path" : "/home/jason/ros2_ws/build/gazebo_ros_link_attacher/gazebo_ros_link_attacher__py/CMakeFiles/gazebo_ros_link_attacher__py",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jason/ros2_ws/build/gazebo_ros_link_attacher/gazebo_ros_link_attacher__py/CMakeFiles/gazebo_ros_link_attacher__py.rule",
+			"sourceGroupIndex" : 1
+		},
+		{
+			"backtrace" : 0,
+			"isGenerated" : true,
+			"path" : "/home/jason/ros2_ws/build/gazebo_ros_link_attacher/rosidl_generator_py/gazebo_ros_link_attacher/_gazebo_ros_link_attacher_s.ep.rosidl_typesupport_fastrtps_c.c.rule",
+			"sourceGroupIndex" : 1
+		}
+	],
+	"type" : "UTILITY"
+}
